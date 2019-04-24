@@ -1,0 +1,53 @@
+# Materials File
+
+MakeNamedVolume "air" "clear"
+	"float fresnel" [1.000292658805847]
+	"color absorption" [0.00000000 0.00000000 0.00000000]
+
+MakeNamedVolume "glass" "homogeneous"
+	"float fresnel" [1.466500163078308]
+	"color g" [0.00000000 0.00000000 0.00000000]
+	"color sigma_a" [0.00000000 0.00000000 0.00000000]
+	"color sigma_s" [0.00000000 0.00000000 0.00000000]
+
+Texture "white_chess_base_bump+normal_generated" "float" "multimix"
+	"texture tex1" [""]
+	"texture tex2" [""]
+	"float weights" [0.000000000000000 1.000000000000000]
+
+MakeNamedMaterial "white_chess_base"
+	"texture bumpmap" ["white_chess_base_bump+normal_generated"]
+	"bool multibounce" ["false"]
+	"color Kd" [0.41054226 0.41054226 0.41054226]
+	"color Ks" [0.050000000 0.050000000 0.050000000]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.001000000047497]
+	"float vroughness" [0.001000000047497]
+	"string type" ["glossy"]
+
+
+# Geometry File
+
+AttributeBegin #  "Mesh.001"
+
+NamedMaterial "white_chess_base"
+
+Shape "plymesh"
+	"string filename" ["teacup/base.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Mesh.001"]
+	"bool active" ["true"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Mesh"
+
+NamedMaterial "white_chess_base"
+
+Shape "plymesh"
+	"string filename" ["teacup/cup.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Mesh"]
+	"bool active" ["true"]
+
+AttributeEnd # ""

@@ -1,0 +1,88 @@
+# Main Scene File
+
+Renderer "sampler"
+
+Sampler "metropolis"
+    "float largemutationprob" [0.4]
+    "bool usevariance" ["false"]
+    "integer maxconsecrejects" [512]
+
+Accelerator "qbvh"
+
+SurfaceIntegrator "bidirectional"
+    "integer eyedepth" [16]
+    "integer lightdepth" [16]
+
+VolumeIntegrator "single"
+    "float stepsize" [1.0]
+
+PixelFilter "mitchell"
+    "bool supersample" ["true"]
+    "float B" [0.333333343267441]
+    "float C" [0.333333343267441]
+
+LookAt 0 0 0    0 0 1    0 -1 0
+
+Camera "orthographic"
+    #"float fov" [72.092115]
+    "float screenwindow" [-1.000000 1.000000 -1 1]
+    "float shutteropen" [0.000000000000000]
+    "float shutterclose" [0.041666666666667]
+    "bool autofocus" ["true"]
+    "float hither" [0.01]
+    "float yon" [100.0]
+
+Film "fleximage"
+    "integer xresolution" [256]
+    "integer yresolution" [256]
+    "float gamma" [2.2]
+    "float colorspace_white" [0.314275000000000 0.329411000000000]
+    "float colorspace_red" [0.630000000000000 0.340000000000000]
+    "float colorspace_green" [0.310000000000000 0.595000000000000]
+    "float colorspace_blue" [0.155000000000000 0.070000000000000]
+    "string filename" ["outdoor-C-quantshapes"]
+    "bool write_resume_flm" ["false"]
+    "bool restart_resume_flm" ["false"]
+    "bool write_flm_direct" ["false"]
+    "bool write_exr_halftype" ["true"]
+    "bool write_exr_applyimaging" ["true"]
+    "bool write_exr_ZBuf" ["true"]
+    "string write_exr_compressiontype" ["PIZ (lossless)"]
+    "string write_exr_zbuf_normalizationtype" ["None"]
+    "bool write_exr" ["false"]
+    "bool write_png" ["true"]
+    "string write_png_channels" ["RGB"]
+    "bool write_png_16bit" ["false"]
+    "bool write_tga" ["false"]
+    "string ldr_clamp_method" ["cut"]
+    "integer writeinterval" [3000]
+    "integer tilecount" [0]
+    "string tonemapkernel" ["reinhard"]
+#    "string tonemapkernel" ["linear"]
+#    "float linear_sensitivity" [1.0]
+#    "float linear_exposure" [33.2464146023]
+#    "float linear_fstop" [1.0]
+#    "float linear_gamma" [1.0]
+    "integer haltspp" [1000]
+#    "string background" ["bedroom-A_bg.png"]
+#    "string background" ["bedroom-A_small_bg.png"]
+
+WorldBegin
+
+AttributeBegin
+LightGroup "pano"
+Rotate 90 1 0 0
+Rotate 90 0 0 1
+Scale -1 1 1
+LightSource "infinite"
+    "float importance" [1.0]
+    "float gamma" [1.0]
+    "integer nsamples" [1]
+    "string mapname" ["outdoor-C-pano.exr"]
+    "string mapping" ["latlong"]
+    "float gain" [1.0]
+AttributeEnd
+
+Include "../../quantshapes.lxo"
+
+WorldEnd

@@ -1,0 +1,34 @@
+Texture "copperbump" "float" "blender_voronoi"
+	"float bright" [1.000000000000000]
+	"float contrast" [0.05]
+	"string distmetric" ["actual_distance"]
+	"float minkovsky_exp" [2.500000000000000]
+	"float noisesize" [0.250000000000000]
+	"float nabla" [0.025000000372529]
+	"float w1" [1.000000000000000]
+	"float w2" [0.000000000000000]
+	"float w3" [0.000000000000000]
+	"float w4" [0.000000000000000]
+	"string coordinates" ["global"]
+	"vector translate" [0.000000000000000 0.000000000000000 0.000000000000000]
+	"vector rotate" [0.000000000000000 0.000000000000000 0.000000000000000]
+	"vector scale" [1.000000000000000 1.000000000000000 1.000000000000000]
+
+Texture "coppermat_nk" "fresnel" "preset"
+	"string name" ["copper"]
+
+MakeNamedMaterial "coppermat"
+	"texture bumpmap" ["copperbump"]
+	"float uroughness" [0.075000002980232]
+	"float vroughness" [0.075000002980232]
+	"texture fresnel" ["coppermat_nk"]
+	"string type" ["metal2"]
+
+AttributeBegin
+NamedMaterial "coppermat"
+Shape "plymesh"
+	"string filename" ["buddha/buddha.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["buddha"]
+	"bool active" ["true"]
+AttributeEnd # ""

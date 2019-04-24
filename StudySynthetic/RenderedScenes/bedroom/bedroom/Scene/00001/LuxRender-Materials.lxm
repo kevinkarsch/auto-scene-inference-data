@@ -1,0 +1,709 @@
+# Materials File
+
+MakeNamedMaterial "Water.001"
+	"bool architectural" ["false"]
+	"float cauchyb" [0.000000000000000]
+	"float film" [0.000000000000000]
+	"float filmindex" [1.333299994468689]
+	"float index" [1.330999970436096]
+	"color Kr" [0.98000002 1.00000000 1.00000000]
+	"color Kt" [0.91290772 0.92941338 0.93153846]
+	"string type" ["glass"]
+
+Texture "Texture.002_color" "color" "imagemap"
+	"string filename" ["bedroom/Scene/00001/luxblend_extracted_image_Texture_002.PNG"]
+	"integer discardmipmaps" [0]
+	"float gain" [1.000000000000000]
+	"float gamma" [2.200000047683716]
+	"float maxanisotropy" [8.000000000000000]
+	"string wrap" ["white"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+MakeNamedMaterial "PaintingMat"
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"texture Kd" ["Texture.002_color"]
+	"color Ks" [0.04000000 0.04000000 0.04000000]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.045000001788139]
+	"float vroughness" [0.045000001788139]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "aquaglass"
+	"bool architectural" ["false"]
+	"float cauchyb" [0.000000000000000]
+	"float film" [0.000000000000000]
+	"float filmindex" [1.333299994468689]
+	"float index" [1.534100055694580]
+	"color Kr" [0.94999999 0.94999999 0.94999999]
+	"color Kt" [1.00000000 1.00000000 1.00000000]
+	"string type" ["glass"]
+
+MakeNamedMaterial "Material11"
+	"color Kd" [0.75999999 0.75999999 0.75999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Books_118"
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Books_117"
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+Texture "Kd.006_color" "color" "imagemap"
+	"string filename" ["bedroom/Scene/00001/luxblend_extracted_image_Kd_006.PNG"]
+	"integer discardmipmaps" [0]
+	"float gain" [0.850000023841858]
+	"float gamma" [1.000000000000000]
+	"float maxanisotropy" [8.000000000000000]
+	"string wrap" ["repeat"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+MakeNamedMaterial "large-aquariums1"
+	"texture Kd" ["Kd.006_color"]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Books_12"
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Books_29"
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+Texture "Kd.009_color" "color" "imagemap"
+	"string filename" ["bedroom/Scene/00001/luxblend_extracted_image_Kd_009.PNG"]
+	"integer discardmipmaps" [0]
+	"float gain" [0.699999988079071]
+	"float gamma" [1.000000000000000]
+	"float maxanisotropy" [8.000000000000000]
+	"string wrap" ["repeat"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+MakeNamedMaterial "Books_2"
+	"texture Kd" ["Kd.009_color"]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Books_125"
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Color_0011"
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+Texture "Texture.001_float" "float" "imagemap"
+	"string filename" ["bedroom/Scene/00001/luxblend_extracted_image_Texture_001.PNG"]
+	"integer discardmipmaps" [0]
+	"float gain" [1.000000000000000]
+	"float gamma" [1.000000000000000]
+	"float maxanisotropy" [8.000000000000000]
+	"string wrap" ["repeat"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+Texture "Texture.001_float_scaled_1" "float" "scale"
+	"float tex1" [0.014999999664724]
+	"texture tex2" ["Texture.001_float"]
+
+Texture "Kd.002_color" "color" "imagemap"
+	"string filename" ["bedroom/Scene/00001/luxblend_extracted_image_Kd_002.PNG"]
+	"integer discardmipmaps" [0]
+	"float gain" [1.000000000000000]
+	"float gamma" [1.000000000000000]
+	"float maxanisotropy" [8.000000000000000]
+	"string wrap" ["repeat"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+Texture "Kd.002_color_scaled_2" "color" "scale"
+	"color tex1" [0.85000002 0.85000002 0.85000002]
+	"texture tex2" ["Kd.002_color"]
+
+MakeNamedMaterial "wall0"
+	"texture bumpmap" ["Texture.001_float_scaled_1"]
+	"texture Kd" ["Kd.002_color_scaled_2"]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Books_126"
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Blinds_Vertical_Stripe_Gray"
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Books_22"
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Books_21"
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Books_27"
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Books_28"
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Material8"
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Books_130"
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+Texture "Kd.004_color" "color" "imagemap"
+	"string filename" ["bedroom/Scene/00001/luxblend_extracted_image_Kd_004.PNG"]
+	"integer discardmipmaps" [0]
+	"float gain" [1.000000000000000]
+	"float gamma" [1.000000000000000]
+	"float maxanisotropy" [8.000000000000000]
+	"string wrap" ["repeat"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+MakeNamedMaterial "drevo_003"
+	"texture Kd" ["Kd.004_color"]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+Texture "Kd.010_color" "color" "imagemap"
+	"string filename" ["bedroom/Scene/00001/luxblend_extracted_image_Kd_010.PNG"]
+	"integer discardmipmaps" [0]
+	"float gain" [0.699999988079071]
+	"float gamma" [1.000000000000000]
+	"float maxanisotropy" [8.000000000000000]
+	"string wrap" ["repeat"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+MakeNamedMaterial "Books_1"
+	"texture Kd" ["Kd.010_color"]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+Texture "Kd.007_color" "color" "imagemap"
+	"string filename" ["bedroom/Scene/00001/luxblend_extracted_image_Kd_007.PNG"]
+	"integer discardmipmaps" [0]
+	"float gain" [0.850000023841858]
+	"float gamma" [1.000000000000000]
+	"float maxanisotropy" [8.000000000000000]
+	"string wrap" ["repeat"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+MakeNamedMaterial "48663101"
+	"texture Kd" ["Kd.007_color"]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Books_11"
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Glass"
+	"bool architectural" ["false"]
+	"float cauchyb" [0.000000000000000]
+	"float film" [0.000000000000000]
+	"float filmindex" [1.333299994468689]
+	"float index" [1.519999980926514]
+	"color Kr" [0.80000001 0.80000001 0.80000001]
+	"color Kt" [1.00000000 1.00000000 1.00000000]
+	"string type" ["glass"]
+
+Texture "fonar1_nk" "fresnel" "fresnelcolor"
+	"color Kr" [0.75384611 0.75384611 0.75384611]
+
+MakeNamedMaterial "fonar1"
+	"float uroughness" [0.013749331235886]
+	"float vroughness" [0.013749331235886]
+	"texture fresnel" ["fonar1_nk"]
+	"string type" ["metal2"]
+
+Texture "Color_002_nk" "fresnel" "fresnelcolor"
+	"color Kr" [0.80000001 0.80000001 0.80000001]
+
+MakeNamedMaterial "Color_002"
+	"float uroughness" [0.043874021619558]
+	"float vroughness" [0.043874021619558]
+	"texture fresnel" ["Color_002_nk"]
+	"string type" ["metal2"]
+
+MakeNamedMaterial "Books_18"
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+Texture "Kd.005_color" "color" "imagemap"
+	"string filename" ["bedroom/Scene/00001/luxblend_extracted_image_Kd_005.PNG"]
+	"integer discardmipmaps" [0]
+	"float gain" [0.899999976158142]
+	"float gamma" [1.000000000000000]
+	"float maxanisotropy" [8.000000000000000]
+	"string wrap" ["repeat"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+MakeNamedMaterial "Material42"
+	"texture Kd" ["Kd.005_color"]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Color_0042"
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+Texture "Material3_nk" "fresnel" "fresnelcolor"
+	"color Kr" [0.29999998 0.27754870 0.23795106]
+
+MakeNamedMaterial "Material3"
+	"float uroughness" [0.112154483795166]
+	"float vroughness" [0.112154483795166]
+	"texture fresnel" ["Material3_nk"]
+	"string type" ["metal2"]
+
+MakeNamedMaterial "Books_121"
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Books_122"
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Blue_Glass"
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Color_0052"
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Default_Material"
+	"color Kd" [0.75999999 0.75999999 0.75999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Books_15"
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Books_16"
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Books_123"
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Books_124"
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Books_129"
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Books_17"
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Books_116"
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Books_132"
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Books_115"
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Books_210"
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Material9"
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Books_24"
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Books_23"
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Books_211"
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Books_131"
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Color_0001"
+	"color Kd" [0.47448003 0.68000001 0.65272152]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Material1"
+	"bool multibounce" ["false"]
+	"bool separable" ["false"]
+	"color Kd" [0.52434409 0.43889561 0.32223147]
+	"float index" [1.450199961662292]
+	"color Ks" [1.00000000 1.00000000 1.00000000]
+	"float uroughness" [0.044553365558386]
+	"float vroughness" [0.044553365558386]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "fonar2"
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+Texture "Texture_float" "float" "imagemap"
+	"string filename" ["bedroom/Scene/00001/luxblend_extracted_image_Texture.PNG"]
+	"integer discardmipmaps" [0]
+	"float gain" [1.000000000000000]
+	"float gamma" [1.000000000000000]
+	"float maxanisotropy" [8.000000000000000]
+	"string wrap" ["repeat"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+Texture "Texture_float_scaled_3" "float" "scale"
+	"float tex1" [0.006000000052154]
+	"texture tex2" ["Texture_float"]
+
+Texture "Kd.001_color" "color" "imagemap"
+	"string filename" ["bedroom/Scene/00001/luxblend_extracted_image_Kd_001.PNG"]
+	"integer discardmipmaps" [0]
+	"float gain" [1.000000000000000]
+	"float gamma" [1.000000000000000]
+	"float maxanisotropy" [8.000000000000000]
+	"string wrap" ["repeat"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+MakeNamedMaterial "Wood_Floor_Parquet"
+	"texture bumpmap" ["Texture_float_scaled_3"]
+	"bool multibounce" ["false"]
+	"bool separable" ["false"]
+	"texture Kd" ["Kd.001_color"]
+	"float index" [1.401399731636047]
+	"color Ks" [1.00000000 1.00000000 1.00000000]
+	"float uroughness" [0.097032561898232]
+	"float vroughness" [0.097032561898232]
+	"string type" ["glossy"]
+
+Texture "Kd.003_color" "color" "imagemap"
+	"string filename" ["bedroom/Scene/00001/luxblend_extracted_image_Kd_003.PNG"]
+	"integer discardmipmaps" [0]
+	"float gain" [0.899999976158142]
+	"float gamma" [1.000000000000000]
+	"float maxanisotropy" [8.000000000000000]
+	"string wrap" ["repeat"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+MakeNamedMaterial "136458-004-1E6B136D"
+	"texture Kd" ["Kd.003_color"]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Books_217"
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Books_216"
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Books_218"
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Books_110"
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+Texture "Kd.013_color" "color" "imagemap"
+	"string filename" ["bedroom/Scene/00001/luxblend_extracted_image_Kd_013.PNG"]
+	"integer discardmipmaps" [0]
+	"float gain" [0.899999976158142]
+	"float gamma" [1.000000000000000]
+	"float maxanisotropy" [8.000000000000000]
+	"string wrap" ["repeat"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+MakeNamedMaterial "Wood_Bamboo"
+	"bool multibounce" ["false"]
+	"bool separable" ["false"]
+	"texture Kd" ["Kd.013_color"]
+	"float index" [1.450299739837646]
+	"color Ks" [1.00000000 1.00000000 1.00000000]
+	"float uroughness" [0.044377535581589]
+	"float vroughness" [0.044377535581589]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "Books_25"
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Books_26"
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Books_213"
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Books_214"
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Books_114"
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Books_113"
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Material4"
+	"color Kd" [0.49684617 0.56434929 0.62461537]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Books_112"
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Books_111"
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Books_127"
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Books_212"
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Books_120"
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Material7"
+	"bool multibounce" ["false"]
+	"bool separable" ["false"]
+	"color Kd" [0.57999998 0.54156190 0.45507690]
+	"float index" [1.372800111770630]
+	"color Ks" [1.00000000 1.00000000 1.00000000]
+	"float uroughness" [0.095563739538193]
+	"float vroughness" [0.095563739538193]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "Books_128"
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Books_215"
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Books_19"
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+Texture "Kd_color" "color" "imagemap"
+	"string filename" ["bedroom/Scene/00001/luxblend_extracted_image_Kd.PNG"]
+	"integer discardmipmaps" [0]
+	"float gain" [0.899999976158142]
+	"float gamma" [1.000000000000000]
+	"float maxanisotropy" [8.000000000000000]
+	"string wrap" ["repeat"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+MakeNamedMaterial "Material23"
+	"texture Kd" ["Kd_color"]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Mad_escura_02"
+	"color Kd" [0.01692306 0.01692306 0.01692306]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Material10"
+	"color Kd" [0.81000000 0.81000000 0.81000000]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "outwall"
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Material2"
+	"bool onesided" ["true"]
+	"bool multibounce" ["false"]
+	"color Kt" [0.10963588 0.20788307 0.10246962]
+	"color Kd" [0.23091646 0.44000000 0.21647999]
+	"float index" [1.555100083351135]
+	"color Ks" [1.00000000 1.00000000 1.00000000]
+	"float uroughness" [0.041038185358047]
+	"float vroughness" [0.041038185358047]
+	"string type" ["glossytranslucent"]
+
+MakeNamedMaterial "Books_13"
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Books_119"
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Books_14"
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Vegetation_Grass_Artificial"
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+Texture "Kd.011_color" "color" "imagemap"
+	"string filename" ["bedroom/Scene/00001/luxblend_extracted_image_Kd_011.PNG"]
+	"integer discardmipmaps" [0]
+	"float gain" [0.839999973773956]
+	"float gamma" [1.000000000000000]
+	"float maxanisotropy" [8.000000000000000]
+	"string wrap" ["repeat"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+MakeNamedMaterial "Material6"
+	"texture Kd" ["Kd.011_color"]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]

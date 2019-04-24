@@ -1,0 +1,112 @@
+# Materials File
+
+MakeNamedVolume "air" "clear"
+	"float fresnel" [1.000292658805847]
+	"color absorption" [0.00000000 0.00000000 0.00000000]
+
+MakeNamedVolume "glass" "homogeneous"
+	"float fresnel" [1.519999980926514]
+	"color g" [0.00000000 0.00000000 0.00000000]
+	"color sigma_a" [0.00000000 0.00000000 0.00000000]
+	"color sigma_s" [0.00000000 0.00000000 0.00000000]
+
+MakeNamedVolume "glassgreen" "clear"
+	"float fresnel" [1.519999980926514]
+	"color absorption" [1.89986811 0.00000000 1.17722646]
+
+MakeNamedMaterial "vitra_turbine_clock_mtl_2"
+	"bool multibounce" ["false"]
+	"color Kd" [0.03521584 0.03521584 0.03521584]
+	"color Ks" [0.04000000 0.04000000 0.04000000]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.075000002980232]
+	"float vroughness" [0.075000002980232]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "vitra_turbine_clock_mtl_1"
+	"bool multibounce" ["false"]
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"color Ks" [0.04000000 0.04000000 0.04000000]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.075000002980232]
+	"float vroughness" [0.075000002980232]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "vitra_turbine_clock_mtl_3"
+	"float film" [0.000000000000000]
+	"float filmindex" [1.333299994468689]
+	"color Kr" [0.69999999 0.69999999 0.69999999]
+	"color Ks" [0.04000000 0.04000000 0.04000000]
+	"float uroughness" [0.075000002980232]
+	"float vroughness" [0.075000002980232]
+	"string type" ["shinymetal"]
+
+MakeNamedMaterial "Material.001"
+	"color Kd" [0.38801369 0.52114332 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+
+# Geometry File
+
+AttributeBegin #  "Mesh.004"
+
+NamedMaterial "vitra_turbine_clock_mtl_2"
+
+Shape "plymesh"
+	"string filename" ["clock_turbine/vitra_turbine_clock_004_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Mesh.004"]
+	"bool active" ["true"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Mesh.003"
+
+NamedMaterial "vitra_turbine_clock_mtl_1"
+
+Shape "plymesh"
+	"string filename" ["clock_turbine/vitra_turbine_clock_003_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Mesh.003"]
+	"bool active" ["true"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Mesh.002"
+
+NamedMaterial "vitra_turbine_clock_mtl_3"
+
+Shape "plymesh"
+	"string filename" ["clock_turbine/vitra_turbine_clock_002_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Mesh.002"]
+	"bool active" ["true"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Mesh.001"
+
+NamedMaterial "vitra_turbine_clock_mtl_1"
+
+Shape "plymesh"
+	"string filename" ["clock_turbine/vitra_turbine_clock_001_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Mesh.001"]
+	"bool active" ["true"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Mesh"
+
+NamedMaterial "vitra_turbine_clock_mtl_2"
+
+Shape "plymesh"
+	"string filename" ["clock_turbine/vitra_turbine_clock_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Mesh"]
+	"bool active" ["true"]
+
+AttributeEnd # ""

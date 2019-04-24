@@ -1,0 +1,124 @@
+# Materials File
+
+MakeNamedVolume "world" "clear"
+	"float fresnel" [1.000277042388916]
+	"color absorption" [0.00000000 0.00000000 0.00000000]
+
+Texture "Material_bump+normal_generated" "float" "multimix"
+	"texture tex1" [""]
+	"texture tex2" [""]
+	"float weights" [0.000000000000000 1.000000000000000]
+
+MakeNamedMaterial "Material"
+	"texture bumpmap" ["Material_bump+normal_generated"]
+	"bool multibounce" ["false"]
+	"color Kd" [0.04954659 0.04954659 0.04954659]
+	"color Ks" [0.04000000 0.04000000 0.04000000]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.075000002980232]
+	"float vroughness" [0.075000002980232]
+	"string type" ["glossy"]
+
+Texture "Material.002_bump+normal_generated" "float" "multimix"
+	"texture tex1" [""]
+	"texture tex2" [""]
+	"float weights" [0.000000000000000 1.000000000000000]
+
+MakeNamedMaterial "Material.002"
+	"texture bumpmap" ["Material.002_bump+normal_generated"]
+	"bool multibounce" ["false"]
+	"color Kd" [0.02197780 0.02197780 0.02197780]
+	"color Ks" [0.04000000 0.04000000 0.04000000]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.238197937607765]
+	"float vroughness" [0.238197937607765]
+	"string type" ["glossy"]
+
+Texture "RobotMetal_bump+normal_generated" "float" "multimix"
+	"texture tex1" [""]
+	"texture tex2" [""]
+	"float weights" [0.000000000000000 1.000000000000000]
+
+MakeNamedMaterial "RobotMetal"
+	"texture bumpmap" ["RobotMetal_bump+normal_generated"]
+	"float uroughness" [0.075000002980232]
+	"float vroughness" [0.075000002980232]
+	"string name" ["silver"]
+	"string type" ["metal"]
+
+Texture "Material.003_bump+normal_generated" "float" "multimix"
+	"texture tex1" [""]
+	"texture tex2" [""]
+	"float weights" [0.000000000000000 1.000000000000000]
+
+MakeNamedMaterial "Material.003"
+	"texture bumpmap" ["Material.003_bump+normal_generated"]
+	"string name" ["blue matte"]
+	"string type" ["carpaint"]
+
+Texture "Material.001_bump+normal_generated" "float" "multimix"
+	"texture tex1" [""]
+	"texture tex2" [""]
+	"float weights" [0.000000000000000 1.000000000000000]
+
+MakeNamedMaterial "Material.001"
+	"texture bumpmap" ["Material.001_bump+normal_generated"]
+	"color Kd" [0.38801369 0.52114332 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+
+# Geometry File
+
+AttributeBegin #  "Mesh.019"
+
+AttributeBegin #  ""
+
+NamedMaterial "Material"
+
+Shape "plymesh"
+	"string filename" ["bike/bike0.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Mesh.019"]
+	"bool active" ["true"]
+
+AttributeEnd # ""
+
+AttributeBegin #  ""
+
+NamedMaterial "Material.002"
+
+Shape "plymesh"
+	"string filename" ["bike/bike1.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Mesh.019"]
+	"bool active" ["true"]
+
+AttributeEnd # ""
+
+AttributeBegin #  ""
+
+NamedMaterial "RobotMetal"
+
+Shape "plymesh"
+	"string filename" ["bike/bike2.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Mesh.019"]
+	"bool active" ["true"]
+
+AttributeEnd # ""
+
+AttributeBegin #  ""
+
+NamedMaterial "Material.003"
+
+Shape "plymesh"
+	"string filename" ["bike/bike3.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Mesh.019"]
+	"bool active" ["true"]
+
+AttributeEnd # ""
+
+AttributeEnd # ""
+

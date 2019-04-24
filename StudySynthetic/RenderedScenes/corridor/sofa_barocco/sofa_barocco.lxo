@@ -1,0 +1,92 @@
+# Materials File
+
+MakeNamedVolume "air" "clear"
+	"float fresnel" [1.000292658805847]
+	"color absorption" [0.00000000 0.00000000 0.00000000]
+
+MakeNamedVolume "glass" "homogeneous"
+	"float fresnel" [1.519999980926514]
+	"color g" [0.00000000 0.00000000 0.00000000]
+	"color sigma_a" [0.00000000 0.00000000 0.00000000]
+	"color sigma_s" [0.00000000 0.00000000 0.00000000]
+
+MakeNamedVolume "glassgreen" "clear"
+	"float fresnel" [1.519999980926514]
+	"color absorption" [1.89986811 0.00000000 1.17722646]
+
+Texture "zanotta_barocco_sofa_terminal_248_2_mtl_2_bump+normal_generated" "float" "multimix"
+	"texture tex1" [""]
+	"texture tex2" [""]
+	"float weights" [0.000000000000000 1.000000000000000]
+
+MakeNamedMaterial "zanotta_barocco_sofa_terminal_248_2_mtl_2"
+	"texture bumpmap" ["zanotta_barocco_sofa_terminal_248_2_mtl_2_bump+normal_generated"]
+	"float film" [0.000000000000000]
+	"float filmindex" [1.333299994468689]
+	"color Kr" [0.69999999 0.69999999 0.69999999]
+	"color Ks" [0.04000000 0.04000000 0.04000000]
+	"float uroughness" [0.075000002980232]
+	"float vroughness" [0.075000002980232]
+	"string type" ["shinymetal"]
+
+Texture "Bump_float" "float" "imagemap"
+	"string filename" ["sofa_barocco/dcmap_zanotta_barocco_sofa_terminal_248_2_1.jpg"]
+	"float gamma" [2.200000000000000]
+	"string mapping" ["uv"]
+	"float udelta" [0.000000000000000]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float vdelta" [0.000000000000000]
+
+Texture "Bump_float_scaled_1" "float" "scale"
+	"float tex1" [0.009999999776483]
+	"texture tex2" ["Bump_float"]
+
+Texture "zanotta_barocco_sofa_terminal_248_2_mtl_1_bump+normal_generated" "float" "multimix"
+	"texture tex1" ["Bump_float"]
+	"texture tex2" [""]
+	"float weights" [0.009999999776483 1.000000000000000]
+
+MakeNamedMaterial "zanotta_barocco_sofa_terminal_248_2_mtl_1"
+	"texture bumpmap" ["zanotta_barocco_sofa_terminal_248_2_mtl_1_bump+normal_generated"]
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+Texture "Material.001_bump+normal_generated" "float" "multimix"
+	"texture tex1" [""]
+	"texture tex2" [""]
+	"float weights" [0.000000000000000 1.000000000000000]
+
+MakeNamedMaterial "Material.001"
+	"texture bumpmap" ["Material.001_bump+normal_generated"]
+	"color Kd" [0.38801369 0.52114332 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+
+# Geometry File
+
+AttributeBegin #  "Mesh.001"
+
+NamedMaterial "zanotta_barocco_sofa_terminal_248_2_mtl_2"
+
+Shape "plymesh"
+	"string filename" ["sofa_barocco/zanotta_barocco_sofa_terminal_248_2_001_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Mesh.001"]
+	"bool active" ["true"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Mesh"
+
+NamedMaterial "zanotta_barocco_sofa_terminal_248_2_mtl_1"
+
+Shape "plymesh"
+	"string filename" ["sofa_barocco/zanotta_barocco_sofa_terminal_248_2_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Mesh"]
+	"bool active" ["true"]
+
+AttributeEnd # ""

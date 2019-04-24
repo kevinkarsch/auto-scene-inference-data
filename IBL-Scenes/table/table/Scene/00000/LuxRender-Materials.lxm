@@ -1,0 +1,573 @@
+# Materials File
+
+MakeNamedVolume "glass" "clear"
+	"float fresnel" [1.519999980926514]
+	"color absorption" [0.00000000 0.00000000 0.00000000]
+
+MakeNamedVolume "vodka" "clear"
+	"float fresnel" [1.363000035285950]
+	"color absorption" [101.43816455 46.20982896 102.05022788]
+
+MakeNamedVolume "room" "clear"
+	"float fresnel" [1.000292658805847]
+	"color absorption" [0.00000000 0.00000000 0.00000000]
+
+MakeNamedVolume "bowl 1" "clear"
+	"float fresnel" [1.519999980926514]
+	"color absorption" [99.47634391 60.04017810 25.64665225]
+
+MakeNamedVolume "bowl 2" "clear"
+	"float fresnel" [1.519999980926514]
+	"color absorption" [25.64665225 89.91293572 154.16920575]
+
+MakeNamedVolume "bowl 3" "clear"
+	"float fresnel" [1.519999980926514]
+	"color absorption" [157.73361697 52.68026857 118.92656424]
+
+MakeNamedMaterial "bowl 3 glass"
+	"bool architectural" ["false"]
+	"bool dispersion" ["false"]
+	"string type" ["glass2"]
+
+MakeNamedMaterial "bowl 2 glass"
+	"bool architectural" ["false"]
+	"bool dispersion" ["false"]
+	"string type" ["glass2"]
+
+MakeNamedMaterial "bowl 1 glass"
+	"bool architectural" ["false"]
+	"bool dispersion" ["false"]
+	"string type" ["glass2"]
+
+Texture "calender diffuse_alpha" "float" "imagemap"
+	"string filename" ["textures/calender diffuse.png"]
+	"string channel" ["alpha"]
+	"integer discardmipmaps" [0]
+	"string filtertype" ["bilinear"]
+	"float maxanisotropy" [8.000000000000000]
+	"float gamma" [1.000000000000000]
+	"string wrap" ["repeat"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+Texture "calender diffuse" "color" "imagemap"
+	"string filename" ["textures/calender diffuse.png"]
+	"integer discardmipmaps" [0]
+	"string filtertype" ["bilinear"]
+	"float gain" [1.000000000000000]
+	"float gamma" [2.200000047683716]
+	"float maxanisotropy" [8.000000000000000]
+	"string wrap" ["repeat"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+MakeNamedMaterial "calender_null"
+	"string type" ["null"]
+
+MakeNamedMaterial "calender_mat"
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"texture Kd" ["calender diffuse"]
+	"color Ks" [0.04000000 0.04000000 0.04000000]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.075000002980232]
+	"float vroughness" [0.075000002980232]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "calender"
+	"string namedmaterial1" ["calender_null"]
+	"string namedmaterial2" ["calender_mat"]
+	"texture amount" ["calender diffuse_alpha"]
+	"string type" ["mix"]
+
+MakeNamedMaterial "cabinet plugs"
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"color Kd" [0.48999995 0.48999995 0.48999995]
+	"color Ks" [0.04000000 0.04000000 0.04000000]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.075000002980232]
+	"float vroughness" [0.075000002980232]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "Material"
+	"string type" ["null"]
+
+MakeNamedMaterial "lamp emitter"
+	"string type" ["null"]
+
+Texture "lamp spectrum" "color" "lampspectrum"
+	"string name" ["FLD2"]
+
+Texture "spices diff" "color" "imagemap"
+	"string filename" ["textures/spices diff.jpg"]
+	"integer discardmipmaps" [0]
+	"string filtertype" ["bilinear"]
+	"float gain" [1.000000000000000]
+	"float gamma" [2.200000047683716]
+	"float maxanisotropy" [8.000000000000000]
+	"string wrap" ["repeat"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+MakeNamedMaterial "spice 4"
+	"texture Kd" ["spices diff"]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "spice 3"
+	"texture Kd" ["spices diff"]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "spice 2"
+	"texture Kd" ["spices diff"]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "aluminum"
+	"float uroughness" [0.100000001490116]
+	"float vroughness" [0.300000011920929]
+	"string name" ["aluminium"]
+	"string type" ["metal"]
+
+MakeNamedMaterial "spices glass"
+	"bool architectural" ["false"]
+	"bool dispersion" ["false"]
+	"string type" ["glass2"]
+
+MakeNamedMaterial "spice 1"
+	"texture Kd" ["spices diff"]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "alu rubber cover"
+	"color Kd" [0.05998657 0.05998657 0.05998657]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "bottle 1 glass "
+	"bool architectural" ["false"]
+	"bool dispersion" ["false"]
+	"string type" ["glass2"]
+
+MakeNamedMaterial "bottle 1 liquidsurfac"
+	"bool architectural" ["false"]
+	"bool dispersion" ["false"]
+	"string type" ["glass2"]
+
+MakeNamedMaterial "bottle 1 liquid"
+	"bool architectural" ["false"]
+	"bool dispersion" ["false"]
+	"string type" ["glass2"]
+
+Texture "bottle 1 cork diff" "color" "imagemap"
+	"string filename" ["textures/cork diff.jpg"]
+	"integer discardmipmaps" [0]
+	"string filtertype" ["bilinear"]
+	"float gain" [1.000000000000000]
+	"float gamma" [2.200000047683716]
+	"float maxanisotropy" [8.000000000000000]
+	"string wrap" ["repeat"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+Texture "bottle 1 cork diff_scaled_1" "color" "scale"
+	"color tex1" [0.53999996 0.53999996 0.53999996]
+	"texture tex2" ["bottle 1 cork diff"]
+
+MakeNamedMaterial "bottle 1 cork"
+	"texture Kd" ["bottle 1 cork diff_scaled_1"]
+	"float sigma" [10.000000000000000]
+	"string type" ["matte"]
+
+Texture "bottle 1 label diff" "color" "imagemap"
+	"string filename" ["textures/bottle 1 label.jpg"]
+	"integer discardmipmaps" [0]
+	"string filtertype" ["bilinear"]
+	"float gain" [1.000000000000000]
+	"float gamma" [2.200000047683716]
+	"float maxanisotropy" [8.000000000000000]
+	"string wrap" ["repeat"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+MakeNamedMaterial "bottle 1 label"
+	"texture Kd" ["bottle 1 label diff"]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+Texture "cabinet frame noise" "float" "blender_clouds"
+	"float bright" [1.000000000000000]
+	"float contrast" [1.000000000000000]
+	"string noisetype" ["soft_noise"]
+	"string noisebasis" ["blender_original"]
+	"float noisesize" [0.250000000000000]
+	"integer noisedepth" [0]
+	"string coordinates" ["global"]
+	"vector translate" [0.000000000000000 0.000000000000000 0.000000000000000]
+	"vector rotate" [0.000000000000000 0.000000000000000 0.000000000000000]
+	"vector scale" [2.000000000000000 2.000000000000000 2.000000000000000]
+
+Texture "cabinet frame noise_scaled_2" "float" "scale"
+	"float tex1" [0.002000000094995]
+	"texture tex2" ["cabinet frame noise"]
+
+MakeNamedMaterial "cabinet frame"
+	"texture bumpmap" ["cabinet frame noise_scaled_2"]
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"color Kd" [0.54226017 0.55332673 0.53119367]
+	"color Ks" [0.04000000 0.04000000 0.04000000]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.100000001490116]
+	"float vroughness" [0.100000001490116]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+Texture "cabinet door diff" "color" "imagemap"
+	"string filename" ["textures/cabinet door veneer wood.jpg"]
+	"integer discardmipmaps" [0]
+	"string filtertype" ["bilinear"]
+	"float gain" [1.000000000000000]
+	"float gamma" [2.200000047683716]
+	"float maxanisotropy" [8.000000000000000]
+	"string wrap" ["repeat"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+Texture "cabinet door diff_scaled_3" "color" "scale"
+	"color tex1" [0.84633434 0.87623948 0.89999998]
+	"texture tex2" ["cabinet door diff"]
+
+MakeNamedMaterial "cabinet door panel"
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"texture Kd" ["cabinet door diff_scaled_3"]
+	"color Ks" [0.04000000 0.04000000 0.04000000]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.100000001490116]
+	"float vroughness" [0.100000001490116]
+	"float sigma" [20.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "corner shelf white"
+	"color Kd" [0.27998698 0.27998698 0.27998698]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+Texture "corner shelf diff" "color" "imagemap"
+	"string filename" ["textures/table chair wood diff.jpg"]
+	"integer discardmipmaps" [0]
+	"string filtertype" ["bilinear"]
+	"float gain" [1.000000000000000]
+	"float gamma" [2.200000047683716]
+	"float maxanisotropy" [8.000000000000000]
+	"string wrap" ["repeat"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+Texture "corner shelf diff_scaled_4" "color" "scale"
+	"color tex1" [0.50000000 0.50000000 0.50000000]
+	"texture tex2" ["corner shelf diff"]
+
+MakeNamedMaterial "corner shelf wood"
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"texture Kd" ["corner shelf diff_scaled_4"]
+	"color Ks" [0.04000000 0.04000000 0.04000000]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.100000001490116]
+	"float vroughness" [0.100000001490116]
+	"float sigma" [10.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "cabinet door"
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"texture Kd" ["cabinet door diff"]
+	"color Ks" [0.04000000 0.04000000 0.04000000]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.100000001490116]
+	"float vroughness" [0.100000001490116]
+	"float sigma" [10.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "drawer handle"
+	"float uroughness" [0.300000011920929]
+	"float vroughness" [0.100000001490116]
+	"string name" ["aluminium"]
+	"string type" ["metal"]
+
+Texture "table pad bump" "float" "imagemap"
+	"string filename" ["textures/table pad bump.jpg"]
+	"integer discardmipmaps" [0]
+	"string filtertype" ["bilinear"]
+	"float gain" [1.000000000000000]
+	"float gamma" [2.200000047683716]
+	"float maxanisotropy" [8.000000000000000]
+	"string wrap" ["repeat"]
+	"string channel" ["mean"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+Texture "table pad bump_scaled_5" "float" "scale"
+	"float tex1" [0.001000000047497]
+	"texture tex2" ["table pad bump"]
+
+Texture "table pad diff" "color" "imagemap"
+	"string filename" ["textures/table pad diff.jpg"]
+	"integer discardmipmaps" [0]
+	"string filtertype" ["bilinear"]
+	"float gain" [1.000000000000000]
+	"float gamma" [1.200000047683716]
+	"float maxanisotropy" [8.000000000000000]
+	"string wrap" ["repeat"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+MakeNamedMaterial "table pad light"
+	"texture bumpmap" ["table pad bump_scaled_5"]
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"texture Kd" ["table pad diff"]
+	"color Ks" [0.04000000 0.04000000 0.04000000]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.100000001490116]
+	"float vroughness" [0.100000001490116]
+	"float sigma" [10.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "table pad threads"
+	"color Kd" [0.72665322 0.57231098 0.42739913]
+	"float sigma" [10.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "table pad dark"
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"color Kd" [0.09331991 0.04911635 0.02354122]
+	"color Ks" [0.04000000 0.04000000 0.04000000]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.100000001490116]
+	"float vroughness" [0.100000001490116]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+Texture "table chair wood diff" "color" "imagemap"
+	"string filename" ["textures/table chair wood diff.jpg"]
+	"integer discardmipmaps" [0]
+	"string filtertype" ["bilinear"]
+	"float gain" [1.000000000000000]
+	"float gamma" [2.200000047683716]
+	"float maxanisotropy" [8.000000000000000]
+	"string wrap" ["repeat"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+Texture "table chair wood diff_scaled_6" "color" "scale"
+	"color tex1" [0.64666003 0.54727083 0.48814401]
+	"texture tex2" ["table chair wood diff"]
+
+MakeNamedMaterial "table and chair wood"
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"texture Kd" ["table chair wood diff_scaled_6"]
+	"color Ks" [0.04000000 0.04000000 0.04000000]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.100000001490116]
+	"float vroughness" [0.100000001490116]
+	"float sigma" [20.000000000000000]
+	"string type" ["glossy"]
+
+Texture "chair fabric normal" "float" "normalmap"
+	"string filename" ["textures/chair fabric normal.jpg"]
+	"integer discardmipmaps" [0]
+	"string filtertype" ["bilinear"]
+	"float maxanisotropy" [8.000000000000000]
+	"float gamma" [1.000000000000000]
+	"string wrap" ["repeat"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+Texture "chair fabric normal_scaled" "float" "scale"
+	"float tex1" [0.200000002980232]
+	"texture tex2" ["chair fabric normal"]
+
+Texture "chair fabric diff" "color" "imagemap"
+	"string filename" ["textures/chair fabric diff.jpg"]
+	"integer discardmipmaps" [0]
+	"string filtertype" ["bilinear"]
+	"float gain" [1.000000000000000]
+	"float gamma" [2.200000047683716]
+	"float maxanisotropy" [8.000000000000000]
+	"string wrap" ["repeat"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+MakeNamedMaterial "chair fabric_null"
+	"string type" ["null"]
+
+MakeNamedMaterial "chair fabric_mat"
+	"texture bumpmap" ["chair fabric normal_scaled"]
+	"texture Kd" ["chair fabric diff"]
+	"float sigma" [30.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "chair fabric"
+	"string namedmaterial1" ["chair fabric_null"]
+	"string namedmaterial2" ["chair fabric_mat"]
+	"float amount" [0.899999976158142]
+	"string type" ["mix"]
+
+MakeNamedMaterial "light1"
+	"string type" ["null"]
+
+Texture "floor normal" "float" "normalmap"
+	"string filename" ["textures/floor normal.jpg"]
+	"integer discardmipmaps" [0]
+	"string filtertype" ["bilinear"]
+	"float maxanisotropy" [8.000000000000000]
+	"float gamma" [1.000000000000000]
+	"string wrap" ["repeat"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+Texture "floor normal_scaled" "float" "scale"
+	"float tex1" [0.100000001490116]
+	"texture tex2" ["floor normal"]
+
+Texture "floor diffuse" "color" "imagemap"
+	"string filename" ["textures/floor diff.jpg"]
+	"integer discardmipmaps" [0]
+	"string filtertype" ["bilinear"]
+	"float gain" [1.000000000000000]
+	"float gamma" [1.500000000000000]
+	"float maxanisotropy" [8.000000000000000]
+	"string wrap" ["repeat"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+MakeNamedMaterial "floor"
+	"texture bumpmap" ["floor normal_scaled"]
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"texture Kd" ["floor diffuse"]
+	"color Ks" [0.04000000 0.04000000 0.04000000]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.100000001490116]
+	"float vroughness" [0.100000001490116]
+	"float sigma" [10.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "Floor list"
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"color Kd" [0.09998680 0.04976055 0.01700914]
+	"color Ks" [0.04000000 0.04000000 0.04000000]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.200000002980232]
+	"float vroughness" [0.200000002980232]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+Texture "wallcoverings normal" "float" "normalmap"
+	"string filename" ["textures/wallpaper normal.jpg"]
+	"integer discardmipmaps" [0]
+	"string filtertype" ["bilinear"]
+	"float maxanisotropy" [8.000000000000000]
+	"float gamma" [1.000000000000000]
+	"string wrap" ["repeat"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+Texture "wallcoverings normal_scaled" "float" "scale"
+	"float tex1" [1.000000000000000]
+	"texture tex2" ["wallcoverings normal"]
+
+Texture "wallcoverings diff" "color" "imagemap"
+	"string filename" ["textures/wallpaper diffuse.jpg"]
+	"integer discardmipmaps" [0]
+	"string filtertype" ["bilinear"]
+	"float gain" [1.000000000000000]
+	"float gamma" [2.200000047683716]
+	"float maxanisotropy" [8.000000000000000]
+	"string wrap" ["repeat"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+Texture "wallcoverings diff_scaled_7" "color" "scale"
+	"color tex1" [0.84156001 0.88300562 0.90666020]
+	"texture tex2" ["wallcoverings diff"]
+
+MakeNamedMaterial "Room wallcovers"
+	"texture bumpmap" ["wallcoverings normal_scaled"]
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"texture Kd" ["wallcoverings diff_scaled_7"]
+	"color Ks" [0.04000000 0.04000000 0.04000000]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.300000011920929]
+	"float vroughness" [0.300000011920929]
+	"float sigma" [10.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "wall socket"
+	"color Kd" [0.63331991 0.63331991 0.63331991]
+	"float sigma" [30.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "wall socket black"
+	"color Kd" [0.00000000 0.00000000 0.00000000]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]

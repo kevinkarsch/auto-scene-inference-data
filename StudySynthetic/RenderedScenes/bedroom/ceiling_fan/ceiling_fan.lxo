@@ -1,0 +1,2257 @@
+#-------------------------------------------------
+#    ceiling_fan
+#-------------------------------------------------
+# Materials File
+
+MakeNamedMaterial "Fan white refl.001"
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"color Kd" [0.88999999 0.88999999 0.88999999]
+	"color Ks" [0.08423703 0.08423703 0.08423703]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.019999999552965]
+	"float vroughness" [0.019999999552965]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "Black mat"
+	"color Kd" [0.00364159 0.00364159 0.00364159]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Screws black.001"
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"color Kd" [0.01466826 0.01466826 0.01466826]
+	"color Ks" [0.04000000 0.04000000 0.04000000]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.075000002980232]
+	"float vroughness" [0.075000002980232]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "Screws black.002"
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"color Kd" [0.01466826 0.01466826 0.01466826]
+	"color Ks" [0.04000000 0.04000000 0.04000000]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.075000002980232]
+	"float vroughness" [0.075000002980232]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "Screws black.003"
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"color Kd" [0.01466826 0.01466826 0.01466826]
+	"color Ks" [0.04000000 0.04000000 0.04000000]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.075000002980232]
+	"float vroughness" [0.075000002980232]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "Screws black.004"
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"color Kd" [0.01466826 0.01466826 0.01466826]
+	"color Ks" [0.04000000 0.04000000 0.04000000]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.075000002980232]
+	"float vroughness" [0.075000002980232]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "Screws black.005"
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"color Kd" [0.01466826 0.01466826 0.01466826]
+	"color Ks" [0.04000000 0.04000000 0.04000000]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.075000002980232]
+	"float vroughness" [0.075000002980232]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "Screws black.006"
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"color Kd" [0.01466826 0.01466826 0.01466826]
+	"color Ks" [0.04000000 0.04000000 0.04000000]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.075000002980232]
+	"float vroughness" [0.075000002980232]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "Screws black.007"
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"color Kd" [0.01466826 0.01466826 0.01466826]
+	"color Ks" [0.04000000 0.04000000 0.04000000]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.075000002980232]
+	"float vroughness" [0.075000002980232]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "Screws black.008"
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"color Kd" [0.01466826 0.01466826 0.01466826]
+	"color Ks" [0.04000000 0.04000000 0.04000000]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.075000002980232]
+	"float vroughness" [0.075000002980232]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "Screws black.009"
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"color Kd" [0.01466826 0.01466826 0.01466826]
+	"color Ks" [0.04000000 0.04000000 0.04000000]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.075000002980232]
+	"float vroughness" [0.075000002980232]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "Axel screw copper.001"
+	"float uroughness" [0.075000002980232]
+	"float vroughness" [0.075000002980232]
+	"string name" ["copper"]
+	"string type" ["metal"]
+
+MakeNamedMaterial "Fan white refl.002"
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"color Kd" [0.88999999 0.88999999 0.88999999]
+	"color Ks" [0.08423703 0.08423703 0.08423703]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.019999999552965]
+	"float vroughness" [0.019999999552965]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "Fan white refl.003"
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"color Kd" [0.88999999 0.88999999 0.88999999]
+	"color Ks" [0.08423703 0.08423703 0.08423703]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.019999999552965]
+	"float vroughness" [0.019999999552965]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial " Spot internal black.001"
+	"color Kd" [0.00901726 0.00901726 0.00901726]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Energy light matt.001"
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Energy light grey.001"
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"color Kd" [0.48688698 0.48688698 0.48688698]
+	"color Ks" [0.45752189 0.45752189 0.45752189]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.500000000000000]
+	"float vroughness" [0.500000000000000]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "Energy light bulb.001"
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"color Kd" [0.89707792 0.84633160 0.88439137]
+	"color Ks" [0.04000000 0.04000000 0.04000000]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.075000002980232]
+	"float vroughness" [0.075000002980232]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "Fan white refl.004"
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"color Kd" [0.88999999 0.88999999 0.88999999]
+	"color Ks" [0.08423703 0.08423703 0.08423703]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.019999999552965]
+	"float vroughness" [0.019999999552965]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial " Spot internal black.002"
+	"color Kd" [0.00901726 0.00901726 0.00901726]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Energy light matt.002"
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Energy light grey.002"
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"color Kd" [0.48688698 0.48688698 0.48688698]
+	"color Ks" [0.45752189 0.45752189 0.45752189]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.500000000000000]
+	"float vroughness" [0.500000000000000]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "Energy light bulb.002"
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"color Kd" [0.89707792 0.84633160 0.88439137]
+	"color Ks" [0.04000000 0.04000000 0.04000000]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.075000002980232]
+	"float vroughness" [0.075000002980232]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "Fan white refl.005"
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"color Kd" [0.88999999 0.88999999 0.88999999]
+	"color Ks" [0.08423703 0.08423703 0.08423703]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.019999999552965]
+	"float vroughness" [0.019999999552965]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial " Spot internal black.003"
+	"color Kd" [0.00901726 0.00901726 0.00901726]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Energy light matt.003"
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Energy light grey.003"
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"color Kd" [0.48688698 0.48688698 0.48688698]
+	"color Ks" [0.45752189 0.45752189 0.45752189]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.500000000000000]
+	"float vroughness" [0.500000000000000]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "Energy light bulb.003"
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"color Kd" [0.89707792 0.84633160 0.88439137]
+	"color Ks" [0.04000000 0.04000000 0.04000000]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.075000002980232]
+	"float vroughness" [0.075000002980232]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "Fan white refl.006"
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"color Kd" [0.88999999 0.88999999 0.88999999]
+	"color Ks" [0.08423703 0.08423703 0.08423703]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.019999999552965]
+	"float vroughness" [0.019999999552965]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial " Spot internal black"
+	"color Kd" [0.00901726 0.00901726 0.00901726]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Energy light matt"
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Energy light grey"
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"color Kd" [0.48688698 0.48688698 0.48688698]
+	"color Ks" [0.45752189 0.45752189 0.45752189]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.500000000000000]
+	"float vroughness" [0.500000000000000]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "Energy light bulb"
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"color Kd" [0.89707792 0.84633160 0.88439137]
+	"color Ks" [0.04000000 0.04000000 0.04000000]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.075000002980232]
+	"float vroughness" [0.075000002980232]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "Axel screw copper.002"
+	"float uroughness" [0.075000002980232]
+	"float vroughness" [0.075000002980232]
+	"string name" ["copper"]
+	"string type" ["metal"]
+
+MakeNamedMaterial "Axel screw copper.003"
+	"float uroughness" [0.075000002980232]
+	"float vroughness" [0.075000002980232]
+	"string name" ["copper"]
+	"string type" ["metal"]
+
+MakeNamedMaterial "Axel screw copper"
+	"float uroughness" [0.075000002980232]
+	"float vroughness" [0.075000002980232]
+	"string name" ["copper"]
+	"string type" ["metal"]
+
+Texture "Light sticker diff" "color" "imagemap"
+	"string filename" ["ceiling_fan/Ceiling fan uv.png"]
+	"integer discardmipmaps" [0]
+	"string filtertype" ["bilinear"]
+	"float gain" [1.000000000000000]
+	"float gamma" [2.200000047683716]
+	"float maxanisotropy" [8.000000000000000]
+	"string wrap" ["repeat"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+MakeNamedMaterial "light sticker"
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"texture Kd" ["Light sticker diff"]
+	"color Ks" [0.04000000 0.04000000 0.04000000]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.019999999552965]
+	"float vroughness" [0.019999999552965]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "Copper.001"
+	"float uroughness" [0.075000002980232]
+	"float vroughness" [0.075000002980232]
+	"string name" ["copper"]
+	"string type" ["metal"]
+
+MakeNamedMaterial "Copper bump.001"
+	"float uroughness" [0.400000005960464]
+	"float vroughness" [0.400000005960464]
+	"string name" ["copper"]
+	"string type" ["metal"]
+
+MakeNamedMaterial "Material.000"
+	"color Kd" [0.63999999 0.51883096 0.27069294]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Fan white refl.007"
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"color Kd" [0.88999999 0.88999999 0.88999999]
+	"color Ks" [0.08423703 0.08423703 0.08423703]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.019999999552965]
+	"float vroughness" [0.019999999552965]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "Direction switch"
+	"color Kd" [0.01599368 0.01599368 0.01599368]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Dir switch black"
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+Texture "direction switch diff" "color" "imagemap"
+	"string filename" ["ceiling_fan/Ceiling fan uv.png"]
+	"integer discardmipmaps" [0]
+	"string filtertype" ["bilinear"]
+	"float gain" [1.000000000000000]
+	"float gamma" [2.200000047683716]
+	"float maxanisotropy" [8.000000000000000]
+	"string wrap" ["repeat"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+MakeNamedMaterial "Dir switch alu"
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"texture Kd" ["direction switch diff"]
+	"color Ks" [0.04000000 0.04000000 0.04000000]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.019999999552965]
+	"float vroughness" [0.019999999552965]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "Screws black.010"
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"color Kd" [0.01466826 0.01466826 0.01466826]
+	"color Ks" [0.04000000 0.04000000 0.04000000]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.075000002980232]
+	"float vroughness" [0.075000002980232]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "Screws black.011"
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"color Kd" [0.01466826 0.01466826 0.01466826]
+	"color Ks" [0.04000000 0.04000000 0.04000000]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.075000002980232]
+	"float vroughness" [0.075000002980232]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "Screws black.012"
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"color Kd" [0.01466826 0.01466826 0.01466826]
+	"color Ks" [0.04000000 0.04000000 0.04000000]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.075000002980232]
+	"float vroughness" [0.075000002980232]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "Screws black.013"
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"color Kd" [0.01466826 0.01466826 0.01466826]
+	"color Ks" [0.04000000 0.04000000 0.04000000]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.075000002980232]
+	"float vroughness" [0.075000002980232]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "Screws black.014"
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"color Kd" [0.01466826 0.01466826 0.01466826]
+	"color Ks" [0.04000000 0.04000000 0.04000000]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.075000002980232]
+	"float vroughness" [0.075000002980232]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "Copper"
+	"float uroughness" [0.075000002980232]
+	"float vroughness" [0.075000002980232]
+	"string name" ["copper"]
+	"string type" ["metal"]
+
+MakeNamedMaterial "Copper bump"
+	"float uroughness" [0.400000005960464]
+	"float vroughness" [0.400000005960464]
+	"string name" ["copper"]
+	"string type" ["metal"]
+
+MakeNamedMaterial "Material.005"
+	"color Kd" [0.63999999 0.51883096 0.27069294]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Fan white refl.010"
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"color Kd" [0.88999999 0.88999999 0.88999999]
+	"color Ks" [0.08423703 0.08423703 0.08423703]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.019999999552965]
+	"float vroughness" [0.019999999552965]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "Fan white refl.013"
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"color Kd" [0.88999999 0.88999999 0.88999999]
+	"color Ks" [0.08423703 0.08423703 0.08423703]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.019999999552965]
+	"float vroughness" [0.019999999552965]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "Screws black.015"
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"color Kd" [0.01466826 0.01466826 0.01466826]
+	"color Ks" [0.04000000 0.04000000 0.04000000]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.075000002980232]
+	"float vroughness" [0.075000002980232]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "Fan white refl.014"
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"color Kd" [0.88999999 0.88999999 0.88999999]
+	"color Ks" [0.08423703 0.08423703 0.08423703]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.019999999552965]
+	"float vroughness" [0.019999999552965]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "Fan blades white mat.001"
+	"color Kd" [0.85496521 0.85496521 0.85496521]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Screws black.016"
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"color Kd" [0.01466826 0.01466826 0.01466826]
+	"color Ks" [0.04000000 0.04000000 0.04000000]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.075000002980232]
+	"float vroughness" [0.075000002980232]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "Screws black.017"
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"color Kd" [0.01466826 0.01466826 0.01466826]
+	"color Ks" [0.04000000 0.04000000 0.04000000]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.075000002980232]
+	"float vroughness" [0.075000002980232]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "Screws black.018"
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"color Kd" [0.01466826 0.01466826 0.01466826]
+	"color Ks" [0.04000000 0.04000000 0.04000000]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.075000002980232]
+	"float vroughness" [0.075000002980232]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "Screws black.019"
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"color Kd" [0.01466826 0.01466826 0.01466826]
+	"color Ks" [0.04000000 0.04000000 0.04000000]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.075000002980232]
+	"float vroughness" [0.075000002980232]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "Fan white refl.015"
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"color Kd" [0.88999999 0.88999999 0.88999999]
+	"color Ks" [0.08423703 0.08423703 0.08423703]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.019999999552965]
+	"float vroughness" [0.019999999552965]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "Fan blades white mat.002"
+	"color Kd" [0.85496521 0.85496521 0.85496521]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Screws black.020"
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"color Kd" [0.01466826 0.01466826 0.01466826]
+	"color Ks" [0.04000000 0.04000000 0.04000000]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.075000002980232]
+	"float vroughness" [0.075000002980232]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "Screws black.021"
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"color Kd" [0.01466826 0.01466826 0.01466826]
+	"color Ks" [0.04000000 0.04000000 0.04000000]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.075000002980232]
+	"float vroughness" [0.075000002980232]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "Screws black.022"
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"color Kd" [0.01466826 0.01466826 0.01466826]
+	"color Ks" [0.04000000 0.04000000 0.04000000]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.075000002980232]
+	"float vroughness" [0.075000002980232]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "Fan white refl.016"
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"color Kd" [0.88999999 0.88999999 0.88999999]
+	"color Ks" [0.08423703 0.08423703 0.08423703]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.019999999552965]
+	"float vroughness" [0.019999999552965]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "Fan blades white mat.003"
+	"color Kd" [0.85496521 0.85496521 0.85496521]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Screws black.023"
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"color Kd" [0.01466826 0.01466826 0.01466826]
+	"color Ks" [0.04000000 0.04000000 0.04000000]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.075000002980232]
+	"float vroughness" [0.075000002980232]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "Screws black.024"
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"color Kd" [0.01466826 0.01466826 0.01466826]
+	"color Ks" [0.04000000 0.04000000 0.04000000]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.075000002980232]
+	"float vroughness" [0.075000002980232]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "Screws black.025"
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"color Kd" [0.01466826 0.01466826 0.01466826]
+	"color Ks" [0.04000000 0.04000000 0.04000000]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.075000002980232]
+	"float vroughness" [0.075000002980232]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "Fan white refl.017"
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"color Kd" [0.88999999 0.88999999 0.88999999]
+	"color Ks" [0.08423703 0.08423703 0.08423703]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.019999999552965]
+	"float vroughness" [0.019999999552965]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "Screws black.026"
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"color Kd" [0.01466826 0.01466826 0.01466826]
+	"color Ks" [0.04000000 0.04000000 0.04000000]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.075000002980232]
+	"float vroughness" [0.075000002980232]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "Screws black.027"
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"color Kd" [0.01466826 0.01466826 0.01466826]
+	"color Ks" [0.04000000 0.04000000 0.04000000]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.075000002980232]
+	"float vroughness" [0.075000002980232]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "Fan white refl.018"
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"color Kd" [0.88999999 0.88999999 0.88999999]
+	"color Ks" [0.08423703 0.08423703 0.08423703]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.019999999552965]
+	"float vroughness" [0.019999999552965]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "Screws black.028"
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"color Kd" [0.01466826 0.01466826 0.01466826]
+	"color Ks" [0.04000000 0.04000000 0.04000000]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.075000002980232]
+	"float vroughness" [0.075000002980232]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "Screws black.029"
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"color Kd" [0.01466826 0.01466826 0.01466826]
+	"color Ks" [0.04000000 0.04000000 0.04000000]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.075000002980232]
+	"float vroughness" [0.075000002980232]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "Fan white refl.019"
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"color Kd" [0.88999999 0.88999999 0.88999999]
+	"color Ks" [0.08423703 0.08423703 0.08423703]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.019999999552965]
+	"float vroughness" [0.019999999552965]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "Fan blades white mat.004"
+	"color Kd" [0.85496521 0.85496521 0.85496521]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Screws black.030"
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"color Kd" [0.01466826 0.01466826 0.01466826]
+	"color Ks" [0.04000000 0.04000000 0.04000000]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.075000002980232]
+	"float vroughness" [0.075000002980232]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "Screws black.031"
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"color Kd" [0.01466826 0.01466826 0.01466826]
+	"color Ks" [0.04000000 0.04000000 0.04000000]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.075000002980232]
+	"float vroughness" [0.075000002980232]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "Screws black.032"
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"color Kd" [0.01466826 0.01466826 0.01466826]
+	"color Ks" [0.04000000 0.04000000 0.04000000]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.075000002980232]
+	"float vroughness" [0.075000002980232]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "Fan white refl.020"
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"color Kd" [0.88999999 0.88999999 0.88999999]
+	"color Ks" [0.08423703 0.08423703 0.08423703]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.019999999552965]
+	"float vroughness" [0.019999999552965]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "Screws black.033"
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"color Kd" [0.01466826 0.01466826 0.01466826]
+	"color Ks" [0.04000000 0.04000000 0.04000000]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.075000002980232]
+	"float vroughness" [0.075000002980232]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "Screws black.034"
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"color Kd" [0.01466826 0.01466826 0.01466826]
+	"color Ks" [0.04000000 0.04000000 0.04000000]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.075000002980232]
+	"float vroughness" [0.075000002980232]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "Screws black.035"
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"color Kd" [0.01466826 0.01466826 0.01466826]
+	"color Ks" [0.04000000 0.04000000 0.04000000]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.075000002980232]
+	"float vroughness" [0.075000002980232]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "Fan blades white mat"
+	"color Kd" [0.85496521 0.85496521 0.85496521]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Fan white refl.021"
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"color Kd" [0.88999999 0.88999999 0.88999999]
+	"color Ks" [0.08423703 0.08423703 0.08423703]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.019999999552965]
+	"float vroughness" [0.019999999552965]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "Screws black.036"
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"color Kd" [0.01466826 0.01466826 0.01466826]
+	"color Ks" [0.04000000 0.04000000 0.04000000]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.075000002980232]
+	"float vroughness" [0.075000002980232]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "Screws black.037"
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"color Kd" [0.01466826 0.01466826 0.01466826]
+	"color Ks" [0.04000000 0.04000000 0.04000000]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.075000002980232]
+	"float vroughness" [0.075000002980232]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "Fan white refl.022"
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"color Kd" [0.88999999 0.88999999 0.88999999]
+	"color Ks" [0.08423703 0.08423703 0.08423703]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.019999999552965]
+	"float vroughness" [0.019999999552965]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "Fan white refl"
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"color Kd" [0.88999999 0.88999999 0.88999999]
+	"color Ks" [0.08423703 0.08423703 0.08423703]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.019999999552965]
+	"float vroughness" [0.019999999552965]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "Screws black.038"
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"color Kd" [0.01466826 0.01466826 0.01466826]
+	"color Ks" [0.04000000 0.04000000 0.04000000]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.075000002980232]
+	"float vroughness" [0.075000002980232]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "Screws black.039"
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"color Kd" [0.01466826 0.01466826 0.01466826]
+	"color Ks" [0.04000000 0.04000000 0.04000000]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.075000002980232]
+	"float vroughness" [0.075000002980232]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "Screws black"
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"color Kd" [0.01466826 0.01466826 0.01466826]
+	"color Ks" [0.04000000 0.04000000 0.04000000]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.075000002980232]
+	"float vroughness" [0.075000002980232]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+# Geometry File
+
+AttributeBegin #  "Ceiling fan base"
+
+
+AttributeBegin #  ""
+
+NamedMaterial "Fan white refl.001"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Cube_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Ceiling fan base"]
+
+AttributeEnd # ""
+
+AttributeBegin #  ""
+
+NamedMaterial "Black mat"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Cube_0000_m001.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Ceiling fan base"]
+
+AttributeEnd # ""
+
+AttributeEnd # ""
+
+AttributeBegin #  "Screw.005"
+
+
+NamedMaterial "Screws black.001"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Screw_003_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Screw.005"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Screw.004"
+
+
+NamedMaterial "Screws black.002"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Screw_005_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Screw.004"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Screw.003"
+
+
+NamedMaterial "Screws black.003"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Screw_006_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Screw.003"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Screw.002"
+
+
+NamedMaterial "Screws black.004"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Screw_007_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Screw.002"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Screw.001"
+
+
+NamedMaterial "Screws black.005"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Screw_008_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Screw.001"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Screw.009"
+
+
+NamedMaterial "Screws black.006"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Screw_009_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Screw.009"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Screw.008"
+
+
+NamedMaterial "Screws black.007"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Screw_010_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Screw.008"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Screw.007"
+
+
+NamedMaterial "Screws black.008"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Screw_011_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Screw.007"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Screw.006"
+
+
+NamedMaterial "Screws black.009"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Screw_012_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Screw.006"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Circle"
+
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Circle_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Circle"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Axel screw"
+
+
+NamedMaterial "Axel screw copper.001"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Axel_screw_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Axel screw"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Circle.002"
+
+
+NamedMaterial "Fan white refl.002"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Circle_002_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Circle.002"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Spot light 3 casing"
+
+
+AttributeBegin #  ""
+
+NamedMaterial "Fan white refl.003"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Circle_005_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Spot light 3 casing"]
+
+AttributeEnd # ""
+
+AttributeBegin #  ""
+
+NamedMaterial " Spot internal black.001"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Circle_005_0000_m001.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Spot light 3 casing"]
+
+AttributeEnd # ""
+
+AttributeEnd # ""
+
+AttributeBegin #  "Energy light 3 casing"
+
+
+AttributeBegin #  ""
+
+NamedMaterial "Energy light matt.001"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Energy_light_003_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Energy light 3 casing"]
+
+AttributeEnd # ""
+
+AttributeBegin #  ""
+
+NamedMaterial "Energy light grey.001"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Energy_light_003_0000_m001.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Energy light 3 casing"]
+
+AttributeEnd # ""
+
+AttributeEnd # ""
+
+AttributeBegin #  "Energy light 3 bulb"
+
+
+NamedMaterial "Energy light bulb.001"
+
+LightGroup "Spot lights"
+
+AreaLightSource "area"
+	"bool active" ["true"]
+	"float importance" [1.000000000000000]
+	"float gain" [0.019999997690320]
+	"float power" [100.000000000000000]
+	"float efficacy" [17.000000000000000]
+	"integer nsamples" [1]
+	"color L" [1.00000000 0.93926936 0.82925004]
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Energy_light_004_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Energy light 3 bulb"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Spot light 4 casing"
+
+
+AttributeBegin #  ""
+
+NamedMaterial "Fan white refl.004"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Circle_003_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Spot light 4 casing"]
+
+AttributeEnd # ""
+
+AttributeBegin #  ""
+
+NamedMaterial " Spot internal black.002"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Circle_003_0000_m001.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Spot light 4 casing"]
+
+AttributeEnd # ""
+
+AttributeEnd # ""
+
+AttributeBegin #  "Energy light 4 casing"
+
+
+AttributeBegin #  ""
+
+NamedMaterial "Energy light matt.002"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Energy_light_002_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Energy light 4 casing"]
+
+AttributeEnd # ""
+
+AttributeBegin #  ""
+
+NamedMaterial "Energy light grey.002"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Energy_light_002_0000_m001.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Energy light 4 casing"]
+
+AttributeEnd # ""
+
+AttributeEnd # ""
+
+AttributeBegin #  "Energy light 4 bulb"
+
+
+NamedMaterial "Energy light bulb.002"
+
+LightGroup "Spot lights"
+
+AreaLightSource "area"
+	"bool active" ["true"]
+	"float importance" [1.000000000000000]
+	"float gain" [0.019999997690320]
+	"float power" [100.000000000000000]
+	"float efficacy" [17.000000000000000]
+	"integer nsamples" [1]
+	"color L" [1.00000000 0.93926936 0.82925004]
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Energy_light_005_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Energy light 4 bulb"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Spot light 1 casing"
+
+
+AttributeBegin #  ""
+
+NamedMaterial "Fan white refl.005"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Circle_008_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Spot light 1 casing"]
+
+AttributeEnd # ""
+
+AttributeBegin #  ""
+
+NamedMaterial " Spot internal black.003"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Circle_008_0000_m001.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Spot light 1 casing"]
+
+AttributeEnd # ""
+
+AttributeEnd # ""
+
+AttributeBegin #  "Energy light 1 casing"
+
+
+AttributeBegin #  ""
+
+NamedMaterial "Energy light matt.003"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Energy_light_006_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Energy light 1 casing"]
+
+AttributeEnd # ""
+
+AttributeBegin #  ""
+
+NamedMaterial "Energy light grey.003"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Energy_light_006_0000_m001.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Energy light 1 casing"]
+
+AttributeEnd # ""
+
+AttributeEnd # ""
+
+AttributeBegin #  "Energy light 1 bulb"
+
+
+NamedMaterial "Energy light bulb.003"
+
+LightGroup "Spot lights"
+
+AreaLightSource "area"
+	"bool active" ["true"]
+	"float importance" [1.000000000000000]
+	"float gain" [0.019999997690320]
+	"float power" [100.000000000000000]
+	"float efficacy" [17.000000000000000]
+	"integer nsamples" [1]
+	"color L" [1.00000000 0.93926936 0.82925004]
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Energy_light_007_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Energy light 1 bulb"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Spot light 2 casing"
+
+
+AttributeBegin #  ""
+
+NamedMaterial "Fan white refl.006"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Circle_011_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Spot light 2 casing"]
+
+AttributeEnd # ""
+
+AttributeBegin #  ""
+
+NamedMaterial " Spot internal black"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Circle_011_0000_m001.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Spot light 2 casing"]
+
+AttributeEnd # ""
+
+AttributeEnd # ""
+
+AttributeBegin #  "Energy light 2 casing"
+
+
+AttributeBegin #  ""
+
+NamedMaterial "Energy light matt"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Energy_light_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Energy light 2 casing"]
+
+AttributeEnd # ""
+
+AttributeBegin #  ""
+
+NamedMaterial "Energy light grey"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Energy_light_0000_m001.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Energy light 2 casing"]
+
+AttributeEnd # ""
+
+AttributeEnd # ""
+
+AttributeBegin #  "Energy light 2 bulb"
+
+
+NamedMaterial "Energy light bulb"
+
+LightGroup "Spot lights"
+
+AreaLightSource "area"
+	"bool active" ["true"]
+	"float importance" [1.000000000000000]
+	"float gain" [0.019999997690320]
+	"float power" [100.000000000000000]
+	"float efficacy" [17.000000000000000]
+	"integer nsamples" [1]
+	"color L" [1.00000000 0.93926936 0.82925004]
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Energy_light_001_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Energy light 2 bulb"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Axel screw.003"
+
+
+NamedMaterial "Axel screw copper.002"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Axel_screw_002_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Axel screw.003"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Axel screw.002"
+
+
+NamedMaterial "Axel screw copper.003"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Axel_screw_003_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Axel screw.002"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Axel screw.001"
+
+
+NamedMaterial "Axel screw copper"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Axel_screw_001_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Axel screw.001"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Plane.011"
+
+
+NamedMaterial "light sticker"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Plane_005_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Plane.011"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Circle.018"
+
+
+AttributeBegin #  ""
+
+NamedMaterial "Copper.001"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Circle_009_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Circle.018"]
+
+AttributeEnd # ""
+
+AttributeBegin #  ""
+
+NamedMaterial "Copper bump.001"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Circle_009_0000_m001.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Circle.018"]
+
+AttributeEnd # ""
+
+AttributeEnd # ""
+
+AttributeBegin #  "String for lights"
+
+
+NamedMaterial "Material.000"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/String_for_lights_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["String for lights"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Handle for lights"
+
+
+NamedMaterial "Fan white refl.007"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Handle_for_lights_001_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Handle for lights"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Cube.001"
+
+
+NamedMaterial "Direction switch"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Cube_001_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Cube.001"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Plane.005"
+
+
+AttributeBegin #  ""
+
+NamedMaterial "Dir switch black"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Plane_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Plane.005"]
+
+AttributeEnd # ""
+
+AttributeBegin #  ""
+
+NamedMaterial "Dir switch alu"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Plane_0000_m001.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Plane.005"]
+
+AttributeEnd # ""
+
+AttributeEnd # ""
+
+AttributeBegin #  "Screw.015"
+
+
+NamedMaterial "Screws black.010"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Screw_002_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Screw.015"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Screw.014"
+
+
+NamedMaterial "Screws black.011"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Screw_013_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Screw.014"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Screw.010"
+
+
+NamedMaterial "Screws black.012"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Screw_014_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Screw.010"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Screw.011"
+
+
+NamedMaterial "Screws black.013"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Screw_015_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Screw.011"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Screw.012"
+
+
+NamedMaterial "Screws black.014"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Screw_016_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Screw.012"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Circle.020"
+
+
+AttributeBegin #  ""
+
+NamedMaterial "Copper"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Circle_007_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Circle.020"]
+
+AttributeEnd # ""
+
+AttributeBegin #  ""
+
+NamedMaterial "Copper bump"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Circle_007_0000_m001.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Circle.020"]
+
+AttributeEnd # ""
+
+AttributeEnd # ""
+
+AttributeBegin #  "String for lights.001"
+
+
+NamedMaterial "Material.005"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/String_for_lights_001_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["String for lights.001"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Handle for lights.001"
+
+
+NamedMaterial "Fan white refl.010"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Handle_for_lights_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Handle for lights.001"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Circle.001"
+
+
+NamedMaterial "Fan white refl.013"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Circle_001_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Circle.001"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Screw.022"
+
+
+NamedMaterial "Screws black.015"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Screw_017_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Screw.022"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Circle.009"
+
+
+NamedMaterial "Fan white refl.014"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Circle_010_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Circle.009"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Wing 5"
+
+
+NamedMaterial "Fan blades white mat.001"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Plane_001_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Wing 5"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Screw.031"
+
+
+NamedMaterial "Screws black.016"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Screw_018_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Screw.031"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Screw.029"
+
+
+NamedMaterial "Screws black.017"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Screw_019_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Screw.029"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Screw.030"
+
+
+NamedMaterial "Screws black.018"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Screw_020_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Screw.030"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Screw.017"
+
+
+NamedMaterial "Screws black.019"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Screw_021_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Screw.017"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Circle.010"
+
+
+NamedMaterial "Fan white refl.015"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Circle_012_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Circle.010"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Wing 1"
+
+
+NamedMaterial "Fan blades white mat.002"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Plane_003_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Wing 1"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Screw.028"
+
+
+NamedMaterial "Screws black.020"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Screw_022_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Screw.028"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Screw.027"
+
+
+NamedMaterial "Screws black.021"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Screw_023_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Screw.027"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Screw.026"
+
+
+NamedMaterial "Screws black.022"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Screw_024_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Screw.026"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Circle.011"
+
+
+NamedMaterial "Fan white refl.016"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Circle_013_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Circle.011"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Wing 2"
+
+
+NamedMaterial "Fan blades white mat.003"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Plane_004_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Wing 2"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Screw.034"
+
+
+NamedMaterial "Screws black.023"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Screw_025_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Screw.034"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Screw.033"
+
+
+NamedMaterial "Screws black.024"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Screw_026_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Screw.033"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Screw.032"
+
+
+NamedMaterial "Screws black.025"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Screw_027_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Screw.032"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Circle.014"
+
+
+NamedMaterial "Fan white refl.017"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Circle_015_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Circle.014"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Screw.021"
+
+
+NamedMaterial "Screws black.026"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Screw_028_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Screw.021"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Screw.016"
+
+
+NamedMaterial "Screws black.027"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Screw_029_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Screw.016"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Circle.013"
+
+
+NamedMaterial "Fan white refl.018"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Circle_016_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Circle.013"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Screw.025"
+
+
+NamedMaterial "Screws black.028"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Screw_030_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Screw.025"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Screw.020"
+
+
+NamedMaterial "Screws black.029"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Screw_031_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Screw.020"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Circle.004"
+
+
+NamedMaterial "Fan white refl.019"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Circle_014_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Circle.004"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Wing 3"
+
+
+NamedMaterial "Fan blades white mat.004"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Plane_006_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Wing 3"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Screw.037"
+
+
+NamedMaterial "Screws black.030"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Screw_032_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Screw.037"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Screw.036"
+
+
+NamedMaterial "Screws black.031"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Screw_033_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Screw.036"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Screw.035"
+
+
+NamedMaterial "Screws black.032"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Screw_034_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Screw.035"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Circle.008"
+
+
+NamedMaterial "Fan white refl.020"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Circle_006_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Circle.008"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Screw.040"
+
+
+NamedMaterial "Screws black.033"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Screw_035_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Screw.040"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Screw.039"
+
+
+NamedMaterial "Screws black.034"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Screw_036_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Screw.039"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Screw.038"
+
+
+NamedMaterial "Screws black.035"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Screw_001_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Screw.038"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Wing 4"
+
+
+NamedMaterial "Fan blades white mat"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Plane_002_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Wing 4"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Circle.017"
+
+
+NamedMaterial "Fan white refl.021"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Circle_017_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Circle.017"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Screw.024"
+
+
+NamedMaterial "Screws black.036"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Screw_037_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Screw.024"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Screw.019"
+
+
+NamedMaterial "Screws black.037"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Screw_038_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Screw.019"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Circle.016"
+
+
+NamedMaterial "Fan white refl.022"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Circle_018_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Circle.016"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Circle.015"
+
+
+NamedMaterial "Fan white refl"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Circle_004_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Circle.015"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Screw.023"
+
+
+NamedMaterial "Screws black.038"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Screw_039_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Screw.023"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Screw.018"
+
+
+NamedMaterial "Screws black.039"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Screw_004_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Screw.018"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Screw"
+
+
+NamedMaterial "Screws black"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["ceiling_fan/Screw_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Screw"]
+
+AttributeEnd # ""

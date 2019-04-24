@@ -1,0 +1,1565 @@
+# Materials File
+
+MakeNamedMaterial "Dandelion.001"
+	"bool onesided" ["true"]
+	"bool multibounce" ["false"]
+	"color Kt" [1.00000000 0.67266005 0.19711632]
+	"color Kd" [0.63999999 0.34463853 0.09034465]
+	"float index" [1.519999980926514]
+	"color Ks" [1.00000000 1.00000000 1.00000000]
+	"float uroughness" [0.196116134524345]
+	"float vroughness" [0.196116134524345]
+	"string type" ["glossytranslucent"]
+
+MakeNamedMaterial "Stem"
+	"color Kd" [0.15572460 0.32635748 0.13944836]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Ant"
+	"color Kd" [0.63904399 0.63999999 0.17746502]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Dandelion"
+	"bool onesided" ["true"]
+	"bool multibounce" ["false"]
+	"color Kt" [0.44174874 0.53624213 1.00000000]
+	"color Kd" [0.34427351 0.42396757 0.63999999]
+	"float index" [1.519999980926514]
+	"color Ks" [1.00000000 1.00000000 1.00000000]
+	"float uroughness" [0.196116134524345]
+	"float vroughness" [0.196116134524345]
+	"string type" ["glossytranslucent"]
+
+Texture "Kd.001_color" "color" "imagemap"
+	"string filename" ["outdoor/Scene/00001/luxblend_extracted_image_Kd_001.PNG"]
+	"integer discardmipmaps" [0]
+	"float gain" [1.000000000000000]
+	"float gamma" [2.200000047683716]
+	"float maxanisotropy" [8.000000000000000]
+	"string wrap" ["repeat"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+MakeNamedMaterial "Twig"
+	"texture Kd" ["Kd.001_color"]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+Texture "Kd.002_alpha" "float" "imagemap"
+	"string filename" ["textures/SH10lef.tif"]
+	"string channel" ["alpha"]
+	"string filtertype" ["bilinear"]
+	"float gamma" [1.000000000000000]
+	"string wrap" ["repeat"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+Texture "Kd.002_color" "color" "imagemap"
+	"string filename" ["outdoor/Scene/00001/luxblend_extracted_image_Kd_002.PNG"]
+	"integer discardmipmaps" [0]
+	"float gain" [1.000000000000000]
+	"float gamma" [2.200000047683716]
+	"float maxanisotropy" [8.000000000000000]
+	"string wrap" ["repeat"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+MakeNamedMaterial "Leaf.002_null"
+	"string type" ["null"]
+
+MakeNamedMaterial "Leaf.002_mat"
+	"bool onesided" ["true"]
+	"bool multibounce" ["false"]
+	"texture Kt" ["Kd.002_color"]
+	"texture Kd" ["Kd.002_color"]
+	"float index" [1.519999980926514]
+	"color Ks" [1.00000000 1.00000000 1.00000000]
+	"float uroughness" [0.196116134524345]
+	"float vroughness" [0.196116134524345]
+	"string type" ["glossytranslucent"]
+
+MakeNamedMaterial "Leaf.002"
+	"string namedmaterial1" ["Leaf.002_null"]
+	"string namedmaterial2" ["Leaf.002_mat"]
+	"texture amount" ["Kd.002_alpha"]
+	"string type" ["mix"]
+
+Texture "casca bump_float" "float" "imagemap"
+	"string filename" ["outdoor/Scene/00001/luxblend_extracted_image_casca_bump.PNG"]
+	"integer discardmipmaps" [0]
+	"float gain" [1.000000000000000]
+	"float gamma" [1.000000000000000]
+	"float maxanisotropy" [8.000000000000000]
+	"string wrap" ["repeat"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+Texture "casca bump_float_scaled_1" "float" "scale"
+	"float tex1" [0.009999999776483]
+	"texture tex2" ["casca bump_float"]
+
+Texture "casca_color" "color" "imagemap"
+	"string filename" ["outdoor/Scene/00001/luxblend_extracted_image_casca.PNG"]
+	"integer discardmipmaps" [0]
+	"float gain" [1.000000000000000]
+	"float gamma" [2.200000047683716]
+	"float maxanisotropy" [8.000000000000000]
+	"string wrap" ["repeat"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+MakeNamedMaterial "Bark.001"
+	"texture bumpmap" ["casca bump_float_scaled_1"]
+	"bool multibounce" ["false"]
+	"texture Kd" ["casca_color"]
+	"float index" [1.100000023841858]
+	"color Ks" [1.00000000 1.00000000 1.00000000]
+	"float uroughness" [0.301511347293854]
+	"float vroughness" [0.301511347293854]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+Texture "folha.001_alpha" "float" "imagemap"
+	"string filename" ["textures/EU03lef.tif"]
+	"string channel" ["alpha"]
+	"string filtertype" ["bilinear"]
+	"float gamma" [1.000000000000000]
+	"string wrap" ["repeat"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+Texture "folha.001_color" "color" "imagemap"
+	"string filename" ["outdoor/Scene/00001/luxblend_extracted_image_folha_001.PNG"]
+	"integer discardmipmaps" [0]
+	"float gain" [1.000000000000000]
+	"float gamma" [2.200000047683716]
+	"float maxanisotropy" [8.000000000000000]
+	"string wrap" ["repeat"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+Texture "folha.001_color_scaled_2" "color" "scale"
+	"color tex1" [0.61516696 0.61370593 0.27332005]
+	"texture tex2" ["folha.001_color"]
+
+Texture "folha.001_color_scaled_3" "color" "scale"
+	"color tex1" [0.09360572 0.27382481 0.08762392]
+	"texture tex2" ["folha.001_color"]
+
+MakeNamedMaterial "Leaf.001_null"
+	"string type" ["null"]
+
+MakeNamedMaterial "Leaf.001_mat"
+	"bool onesided" ["true"]
+	"bool multibounce" ["false"]
+	"texture Kt" ["folha.001_color_scaled_2"]
+	"texture Kd" ["folha.001_color_scaled_3"]
+	"float index" [1.519999980926514]
+	"color Ks" [1.00000000 1.00000000 1.00000000]
+	"float uroughness" [0.196116134524345]
+	"float vroughness" [0.196116134524345]
+	"string type" ["glossytranslucent"]
+
+MakeNamedMaterial "Leaf.001"
+	"string namedmaterial1" ["Leaf.001_null"]
+	"string namedmaterial2" ["Leaf.001_mat"]
+	"texture amount" ["folha.001_alpha"]
+	"string type" ["mix"]
+
+Texture "Kd.003_alpha" "float" "imagemap"
+	"string filename" ["textures/ML01ned.tif"]
+	"string channel" ["alpha"]
+	"string filtertype" ["bilinear"]
+	"float gamma" [1.000000000000000]
+	"string wrap" ["repeat"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+Texture "Kd.003_color" "color" "imagemap"
+	"string filename" ["outdoor/Scene/00001/luxblend_extracted_image_Kd_003.PNG"]
+	"integer discardmipmaps" [0]
+	"float gain" [1.000000000000000]
+	"float gamma" [2.200000047683716]
+	"float maxanisotropy" [8.000000000000000]
+	"string wrap" ["repeat"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+MakeNamedMaterial "Leaf1_null"
+	"string type" ["null"]
+
+MakeNamedMaterial "Leaf1_mat"
+	"bool onesided" ["true"]
+	"bool multibounce" ["false"]
+	"texture Kt" ["Kd.003_color"]
+	"texture Kd" ["Kd.003_color"]
+	"float index" [1.519999980926514]
+	"color Ks" [1.00000000 1.00000000 1.00000000]
+	"float uroughness" [0.196116134524345]
+	"float vroughness" [0.196116134524345]
+	"string type" ["glossytranslucent"]
+
+MakeNamedMaterial "Leaf1"
+	"string namedmaterial1" ["Leaf1_null"]
+	"string namedmaterial2" ["Leaf1_mat"]
+	"texture amount" ["Kd.003_alpha"]
+	"string type" ["mix"]
+
+Texture "Kd.004 bump_float" "float" "imagemap"
+	"string filename" ["outdoor/Scene/00001/luxblend_extracted_image_Kd_004_bump.PNG"]
+	"integer discardmipmaps" [0]
+	"float gain" [1.000000000000000]
+	"float gamma" [1.000000000000000]
+	"float maxanisotropy" [8.000000000000000]
+	"string wrap" ["repeat"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+Texture "Kd.004 bump_float_scaled_4" "float" "scale"
+	"float tex1" [0.003000000026077]
+	"texture tex2" ["Kd.004 bump_float"]
+
+Texture "Kd.004_color" "color" "imagemap"
+	"string filename" ["outdoor/Scene/00001/luxblend_extracted_image_Kd_004.PNG"]
+	"integer discardmipmaps" [0]
+	"float gain" [1.000000000000000]
+	"float gamma" [2.200000047683716]
+	"float maxanisotropy" [8.000000000000000]
+	"string wrap" ["repeat"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+MakeNamedMaterial "Bark1b"
+	"texture bumpmap" ["Kd.004 bump_float_scaled_4"]
+	"texture Kd" ["Kd.004_color"]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+Texture "Kd.004 bump_float_scaled_5" "float" "scale"
+	"float tex1" [0.003000000026077]
+	"texture tex2" ["Kd.004 bump_float"]
+
+Texture "Kd.005_color" "color" "imagemap"
+	"string filename" ["outdoor/Scene/00001/luxblend_extracted_image_Kd_005.PNG"]
+	"integer discardmipmaps" [0]
+	"float gain" [1.000000000000000]
+	"float gamma" [2.200000047683716]
+	"float maxanisotropy" [8.000000000000000]
+	"string wrap" ["repeat"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+MakeNamedMaterial "Bark1"
+	"texture bumpmap" ["Kd.004 bump_float_scaled_5"]
+	"texture Kd" ["Kd.005_color"]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+Texture "Kd.026_alpha" "float" "imagemap"
+	"string filename" ["textures/TREE_LINE_5.PNG"]
+	"string channel" ["alpha"]
+	"string filtertype" ["bilinear"]
+	"float gamma" [1.000000000000000]
+	"string wrap" ["repeat"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+Texture "Kd.026_color" "color" "imagemap"
+	"string filename" ["outdoor/Scene/00001/luxblend_extracted_image_Kd_026.PNG"]
+	"integer discardmipmaps" [0]
+	"float gain" [1.000000000000000]
+	"float gamma" [2.200000047683716]
+	"float maxanisotropy" [8.000000000000000]
+	"string wrap" ["repeat"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+MakeNamedMaterial "TREE_LINE_5_null"
+	"string type" ["null"]
+
+MakeNamedMaterial "TREE_LINE_5_mat"
+	"texture Kd" ["Kd.026_color"]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "TREE_LINE_5"
+	"string namedmaterial1" ["TREE_LINE_5_null"]
+	"string namedmaterial2" ["TREE_LINE_5_mat"]
+	"texture amount" ["Kd.026_alpha"]
+	"string type" ["mix"]
+
+MakeNamedMaterial "lencol"
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.059999998658895]
+	"string type" ["matte"]
+
+Texture "paredes exteriores disp" "float" "imagemap"
+	"string filename" ["Eira_Textures/paredes_exteriores_DISP.png"]
+	"integer discardmipmaps" [0]
+	"string filtertype" ["bilinear"]
+	"float gain" [1.000000000000000]
+	"float gamma" [2.200000047683716]
+	"float maxanisotropy" [8.000000000000000]
+	"string wrap" ["repeat"]
+	"string channel" ["mean"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+Texture "paredes exteriores disp_scaled_6" "float" "scale"
+	"float tex1" [0.009999999776483]
+	"texture tex2" ["paredes exteriores disp"]
+
+Texture "paredes exteriores bump" "float" "normalmap"
+	"string filename" ["Eira_Textures/Concrete_Wall_016_NORM.png"]
+	"integer discardmipmaps" [0]
+	"string filtertype" ["bilinear"]
+	"float maxanisotropy" [8.000000000000000]
+	"float gamma" [1.000000000000000]
+	"string wrap" ["repeat"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+Texture "base preto_bump+normal_generated" "float" "multimix"
+	"texture tex1" ["paredes exteriores disp"]
+	"texture tex2" ["paredes exteriores bump"]
+	"float weights" [0.009999999776483 1.000000000000000]
+
+Texture "betao preto_color" "color" "imagemap"
+	"string filename" ["outdoor/Scene/00001/luxblend_extracted_image_betao_preto.PNG"]
+	"integer discardmipmaps" [0]
+	"float gain" [1.000000000000000]
+	"float gamma" [2.200000047683716]
+	"float maxanisotropy" [8.000000000000000]
+	"string wrap" ["repeat"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+Texture "paredes exteriores exponent" "float" "imagemap"
+	"string filename" ["Eira_Textures/Concrete_Wall_016_SPEC.png"]
+	"integer discardmipmaps" [0]
+	"string filtertype" ["bilinear"]
+	"float gain" [2.000000000000000]
+	"float gamma" [0.500000000000000]
+	"float maxanisotropy" [8.000000000000000]
+	"string wrap" ["repeat"]
+	"string channel" ["mean"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+Texture "paredes exteriores exponent_scaled_7" "float" "scale"
+	"float tex1" [0.250000000000000]
+	"texture tex2" ["paredes exteriores exponent"]
+
+Texture "paredes exteriores exponent_scaled_8" "float" "scale"
+	"float tex1" [0.250000000000000]
+	"texture tex2" ["paredes exteriores exponent"]
+
+MakeNamedMaterial "base preto"
+	"texture bumpmap" ["base preto_bump+normal_generated"]
+	"bool multibounce" ["false"]
+	"texture Kd" ["betao preto_color"]
+	"float index" [1.080000042915344]
+	"color Ks" [1.00000000 1.00000000 1.00000000]
+	"texture uroughness" ["paredes exteriores exponent_scaled_7"]
+	"texture vroughness" ["paredes exteriores exponent_scaled_8"]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+Texture "sujidade" "color" "imagemap"
+	"string filename" ["Eira_Textures/Grungemaps0034_1_S.jpg"]
+	"integer discardmipmaps" [0]
+	"string filtertype" ["bilinear"]
+	"float gain" [1.000000000000000]
+	"float gamma" [2.200000047683716]
+	"float maxanisotropy" [8.000000000000000]
+	"string wrap" ["repeat"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+Texture "sujidade_scaled_9" "color" "scale"
+	"color tex1" [0.63999999 0.63999999 0.63999999]
+	"texture tex2" ["sujidade"]
+
+MakeNamedMaterial "sujidade"
+	"bool multibounce" ["false"]
+	"texture Kd" ["sujidade_scaled_9"]
+	"color Ks" [0.04000000 0.04000000 0.04000000]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.099503718316555]
+	"float vroughness" [0.099503718316555]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+Texture "grunge mask" "float" "fbm"
+	"integer octaves" [8]
+	"float roughness" [1.000000000000000]
+	"string coordinates" ["local"]
+	"vector translate" [0.000000000000000 0.000000000000000 0.000000000000000]
+	"vector rotate" [0.000000000000000 0.000000000000000 0.000000000000000]
+	"vector scale" [1.000000000000000 1.000000000000000 1.000000000000000]
+
+Texture "grunge mask_scaled_10" "float" "scale"
+	"float tex1" [0.200000002980232]
+	"texture tex2" ["grunge mask"]
+
+MakeNamedMaterial "paredes_exteriores preto"
+	"string namedmaterial1" ["base preto"]
+	"string namedmaterial2" ["sujidade"]
+	"texture amount" ["grunge mask_scaled_10"]
+	"string type" ["mix"]
+
+Texture "pedra exteriores bump" "float" "imagemap"
+	"string filename" ["Eira_Textures/stone03b.jpg"]
+	"integer discardmipmaps" [0]
+	"string filtertype" ["bilinear"]
+	"float gain" [1.000000000000000]
+	"float gamma" [1.000000000000000]
+	"float maxanisotropy" [8.000000000000000]
+	"string wrap" ["repeat"]
+	"string channel" ["mean"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+Texture "pedra exteriores bump_scaled_11" "float" "scale"
+	"float tex1" [0.050000000745058]
+	"texture tex2" ["pedra exteriores bump"]
+
+Texture "pedra exteriores" "color" "imagemap"
+	"string filename" ["Eira_Textures/muro_anca.PNG"]
+	"integer discardmipmaps" [0]
+	"string filtertype" ["bilinear"]
+	"float gain" [1.000000000000000]
+	"float gamma" [2.200000047683716]
+	"float maxanisotropy" [8.000000000000000]
+	"string wrap" ["repeat"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+Texture "pedra exteriores spec" "float" "imagemap"
+	"string filename" ["Eira_Textures/stone03specular.png"]
+	"integer discardmipmaps" [0]
+	"string filtertype" ["bilinear"]
+	"float gain" [1.000000000000000]
+	"float gamma" [1.500000000000000]
+	"float maxanisotropy" [8.000000000000000]
+	"string wrap" ["repeat"]
+	"string channel" ["mean"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+Texture "pedra exteriores spec_scaled_12" "float" "scale"
+	"float tex1" [1.080000042915344]
+	"texture tex2" ["pedra exteriores spec"]
+
+Texture "pedra exteriores spec_scaled_13" "float" "scale"
+	"float tex1" [0.250000000000000]
+	"texture tex2" ["pedra exteriores spec"]
+
+Texture "pedra exteriores spec_scaled_14" "float" "scale"
+	"float tex1" [0.250000000000000]
+	"texture tex2" ["pedra exteriores spec"]
+
+MakeNamedMaterial "muro_anca"
+	"texture bumpmap" ["pedra exteriores bump_scaled_11"]
+	"bool multibounce" ["false"]
+	"texture Kd" ["pedra exteriores"]
+	"texture index" ["pedra exteriores spec_scaled_12"]
+	"color Ks" [1.00000000 1.00000000 1.00000000]
+	"texture uroughness" ["pedra exteriores spec_scaled_13"]
+	"texture vroughness" ["pedra exteriores spec_scaled_14"]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "armarios"
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "armarios_cozinha"
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+Texture "casca bump_float_scaled_15" "float" "scale"
+	"float tex1" [0.009999999776483]
+	"texture tex2" ["casca bump_float"]
+
+MakeNamedMaterial "Bark"
+	"texture bumpmap" ["casca bump_float_scaled_15"]
+	"bool multibounce" ["false"]
+	"texture Kd" ["casca_color"]
+	"float index" [1.100000023841858]
+	"color Ks" [1.00000000 1.00000000 1.00000000]
+	"float uroughness" [0.301511347293854]
+	"float vroughness" [0.301511347293854]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+Texture "folha_alpha" "float" "imagemap"
+	"string filename" ["textures/EU03lef.tif"]
+	"string channel" ["alpha"]
+	"string filtertype" ["bilinear"]
+	"float gamma" [1.000000000000000]
+	"string wrap" ["repeat"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+Texture "folha_color" "color" "imagemap"
+	"string filename" ["outdoor/Scene/00001/luxblend_extracted_image_folha.PNG"]
+	"integer discardmipmaps" [0]
+	"float gain" [1.000000000000000]
+	"float gamma" [2.200000047683716]
+	"float maxanisotropy" [8.000000000000000]
+	"string wrap" ["repeat"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+Texture "folha_color_scaled_16" "color" "scale"
+	"color tex1" [0.61516696 0.61370593 0.27332005]
+	"texture tex2" ["folha_color"]
+
+Texture "folha_color_scaled_17" "color" "scale"
+	"color tex1" [0.09360572 0.27382481 0.08762392]
+	"texture tex2" ["folha_color"]
+
+MakeNamedMaterial "Leaf_null"
+	"string type" ["null"]
+
+MakeNamedMaterial "Leaf_mat"
+	"bool onesided" ["true"]
+	"bool multibounce" ["false"]
+	"texture Kt" ["folha_color_scaled_16"]
+	"texture Kd" ["folha_color_scaled_17"]
+	"float index" [1.519999980926514]
+	"color Ks" [1.00000000 1.00000000 1.00000000]
+	"float uroughness" [0.196116134524345]
+	"float vroughness" [0.196116134524345]
+	"string type" ["glossytranslucent"]
+
+MakeNamedMaterial "Leaf"
+	"string namedmaterial1" ["Leaf_null"]
+	"string namedmaterial2" ["Leaf_mat"]
+	"texture amount" ["folha_alpha"]
+	"string type" ["mix"]
+
+Texture "paredes exteriores disp_scaled_18" "float" "scale"
+	"float tex1" [0.009999999776483]
+	"texture tex2" ["paredes exteriores disp"]
+
+Texture "base_bump+normal_generated" "float" "multimix"
+	"texture tex1" ["paredes exteriores disp"]
+	"texture tex2" ["paredes exteriores bump"]
+	"float weights" [0.009999999776483 1.000000000000000]
+
+Texture "paredes exteriores" "color" "imagemap"
+	"string filename" ["Eira_Textures/paredes_exteriores.PNG"]
+	"integer discardmipmaps" [0]
+	"string filtertype" ["bilinear"]
+	"float gain" [1.000000000000000]
+	"float gamma" [2.200000047683716]
+	"float maxanisotropy" [8.000000000000000]
+	"string wrap" ["repeat"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+Texture "paredes exteriores_scaled_19" "color" "scale"
+	"color tex1" [0.67217362 0.72645801 0.70444900]
+	"texture tex2" ["paredes exteriores"]
+
+Texture "paredes exteriores exponent_scaled_20" "float" "scale"
+	"float tex1" [0.250000000000000]
+	"texture tex2" ["paredes exteriores exponent"]
+
+Texture "paredes exteriores exponent_scaled_21" "float" "scale"
+	"float tex1" [0.250000000000000]
+	"texture tex2" ["paredes exteriores exponent"]
+
+MakeNamedMaterial "base"
+	"texture bumpmap" ["base_bump+normal_generated"]
+	"bool multibounce" ["false"]
+	"texture Kd" ["paredes exteriores_scaled_19"]
+	"float index" [1.080000042915344]
+	"color Ks" [1.00000000 1.00000000 1.00000000]
+	"texture uroughness" ["paredes exteriores exponent_scaled_20"]
+	"texture vroughness" ["paredes exteriores exponent_scaled_21"]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+Texture "betao exterior bump" "float" "imagemap"
+	"string filename" ["Eira_Textures/TheaMat_01_Concrete_3_B.jpg"]
+	"integer discardmipmaps" [0]
+	"string filtertype" ["bilinear"]
+	"float gain" [1.000000000000000]
+	"float gamma" [2.200000047683716]
+	"float maxanisotropy" [8.000000000000000]
+	"string wrap" ["repeat"]
+	"string channel" ["mean"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+Texture "betao exterior bump_scaled_22" "float" "scale"
+	"float tex1" [0.004000000189990]
+	"texture tex2" ["betao exterior bump"]
+
+Texture "betao exterior_color" "color" "imagemap"
+	"string filename" ["outdoor/Scene/00001/luxblend_extracted_image_betao_exterior.PNG"]
+	"integer discardmipmaps" [0]
+	"float gain" [1.000000000000000]
+	"float gamma" [2.200000047683716]
+	"float maxanisotropy" [8.000000000000000]
+	"string wrap" ["repeat"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+Texture "betao exterior_color_scaled_23" "color" "scale"
+	"color tex1" [0.31086424 0.31086424 0.31086424]
+	"texture tex2" ["betao exterior_color"]
+
+MakeNamedMaterial "betao_exterior"
+	"texture bumpmap" ["betao exterior bump_scaled_22"]
+	"bool multibounce" ["false"]
+	"texture Kd" ["betao exterior_color_scaled_23"]
+	"float index" [1.019999980926514]
+	"color Ks" [1.00000000 1.00000000 1.00000000]
+	"float uroughness" [0.250000000000000]
+	"float vroughness" [0.250000000000000]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "Material8"
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "mobilia"
+	"bool multibounce" ["false"]
+	"color Kd" [0.24618018 0.13336423 0.07903527]
+	"float index" [1.299999952316284]
+	"color Ks" [1.00000000 1.00000000 1.00000000]
+	"float uroughness" [0.081378847360611]
+	"float vroughness" [0.081378847360611]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "caixilharias"
+	"bool multibounce" ["false"]
+	"color Kd" [0.01002084 0.01002084 0.01002084]
+	"color Ks" [0.40194684 0.40194684 0.40194684]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.140028014779091]
+	"float vroughness" [0.140028014779091]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "movel_lareira"
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "chamines"
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "chao_cozinha"
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+Texture "chao madeira bump" "float" "imagemap"
+	"string filename" ["Eira_Textures/TheaMat_01_stripe_WFloor_Alder1_B.jpg"]
+	"integer discardmipmaps" [0]
+	"string filtertype" ["bilinear"]
+	"float gain" [1.000000000000000]
+	"float gamma" [1.000000000000000]
+	"float maxanisotropy" [8.000000000000000]
+	"string wrap" ["repeat"]
+	"string channel" ["mean"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+Texture "chao madeira bump_scaled_24" "float" "scale"
+	"float tex1" [0.009999999776483]
+	"texture tex2" ["chao madeira bump"]
+
+Texture "chao madeira_color" "color" "imagemap"
+	"string filename" ["outdoor/Scene/00001/luxblend_extracted_image_chao_madeira.PNG"]
+	"integer discardmipmaps" [0]
+	"float gain" [1.000000000000000]
+	"float gamma" [2.200000047683716]
+	"float maxanisotropy" [8.000000000000000]
+	"string wrap" ["repeat"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+Texture "chao madeira spec" "float" "imagemap"
+	"string filename" ["Eira_Textures/TheaMat_01_stripe_WFloor_Alder1_R.jpg"]
+	"integer discardmipmaps" [0]
+	"string filtertype" ["bilinear"]
+	"float gain" [1.000000000000000]
+	"float gamma" [1.000000000000000]
+	"float maxanisotropy" [8.000000000000000]
+	"string wrap" ["repeat"]
+	"string channel" ["mean"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+Texture "chao madeira spec_scaled_25" "float" "scale"
+	"float tex1" [0.099503718316555]
+	"texture tex2" ["chao madeira spec"]
+
+Texture "chao madeira spec_scaled_26" "float" "scale"
+	"float tex1" [0.099503718316555]
+	"texture tex2" ["chao madeira spec"]
+
+MakeNamedMaterial "chao_madeira"
+	"texture bumpmap" ["chao madeira bump_scaled_24"]
+	"bool multibounce" ["false"]
+	"texture Kd" ["chao madeira_color"]
+	"float index" [1.299999952316284]
+	"color Ks" [1.00000000 1.00000000 1.00000000]
+	"texture uroughness" ["chao madeira spec_scaled_25"]
+	"texture vroughness" ["chao madeira spec_scaled_26"]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+Texture "chapa escura" "float" "imagemap"
+	"string filename" ["Eira_Textures/chapa_escura.PNG"]
+	"integer discardmipmaps" [0]
+	"string filtertype" ["bilinear"]
+	"float gain" [1.000000000000000]
+	"float gamma" [2.200000047683716]
+	"float maxanisotropy" [8.000000000000000]
+	"string wrap" ["repeat"]
+	"string channel" ["mean"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+Texture "chapa escura_scaled_27" "float" "scale"
+	"float tex1" [0.003000000026077]
+	"texture tex2" ["chapa escura"]
+
+MakeNamedMaterial "chapa_escura"
+	"texture bumpmap" ["chapa escura_scaled_27"]
+	"bool multibounce" ["false"]
+	"color Kd" [0.00560397 0.00560397 0.00560397]
+	"color Ks" [0.00636951 0.00636951 0.00636951]
+	"float index" [0.000000000000000]
+	"texture uroughness" ["chapa escura"]
+	"texture vroughness" ["chapa escura"]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+Texture "deck bump" "float" "normalmap"
+	"string filename" ["Eira_Textures/Wood_097_NRM Alternative.tga"]
+	"integer discardmipmaps" [0]
+	"string filtertype" ["bilinear"]
+	"float maxanisotropy" [8.000000000000000]
+	"float gamma" [1.000000000000000]
+	"string wrap" ["repeat"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+Texture "deck bump_scaled" "float" "scale"
+	"float tex1" [1.000000000000000]
+	"texture tex2" ["deck bump"]
+
+Texture "deck_color" "color" "imagemap"
+	"string filename" ["outdoor/Scene/00001/luxblend_extracted_image_deck.PNG"]
+	"integer discardmipmaps" [0]
+	"float gain" [1.000000000000000]
+	"float gamma" [2.200000047683716]
+	"float maxanisotropy" [8.000000000000000]
+	"string wrap" ["repeat"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+Texture "deck spec" "float" "imagemap"
+	"string filename" ["Eira_Textures/Deck_spec2.PNG"]
+	"integer discardmipmaps" [0]
+	"string filtertype" ["bilinear"]
+	"float gain" [1.000000000000000]
+	"float gamma" [1.000000000000000]
+	"float maxanisotropy" [8.000000000000000]
+	"string wrap" ["repeat"]
+	"string channel" ["mean"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+Texture "deck spec_scaled_28" "float" "scale"
+	"float tex1" [0.081378847360611]
+	"texture tex2" ["deck spec"]
+
+Texture "deck spec_scaled_29" "float" "scale"
+	"float tex1" [0.081378847360611]
+	"texture tex2" ["deck spec"]
+
+MakeNamedMaterial "Deck"
+	"texture bumpmap" ["deck bump_scaled"]
+	"bool multibounce" ["false"]
+	"texture Kd" ["deck_color"]
+	"texture index" ["deck spec"]
+	"color Ks" [1.00000000 1.00000000 1.00000000]
+	"texture uroughness" ["deck spec_scaled_28"]
+	"texture vroughness" ["deck spec_scaled_29"]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "escadas_interiores"
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "mat3"
+	"bool multibounce" ["false"]
+	"color Kd" [0.07547668 0.18176401 0.06462998]
+	"float index" [1.519999980926514]
+	"color Ks" [1.00000000 1.00000000 1.00000000]
+	"float uroughness" [0.196116134524345]
+	"float vroughness" [0.196116134524345]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "mat5"
+	"bool onesided" ["true"]
+	"bool multibounce" ["false"]
+	"color Kt" [0.15042621 0.30833852 0.12965582]
+	"color Kd" [0.06807941 0.27153328 0.06721064]
+	"float index" [1.519999980926514]
+	"color Ks" [1.00000000 1.00000000 1.00000000]
+	"float uroughness" [0.196116134524345]
+	"float vroughness" [0.196116134524345]
+	"string type" ["glossytranslucent"]
+
+MakeNamedMaterial "mat4"
+	"bool multibounce" ["false"]
+	"color Kd" [0.04630142 0.18089530 0.06033023]
+	"float index" [1.519999980926514]
+	"color Ks" [1.00000000 1.00000000 1.00000000]
+	"float uroughness" [0.196116134524345]
+	"float vroughness" [0.196116134524345]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "mat2"
+	"bool onesided" ["true"]
+	"bool multibounce" ["false"]
+	"color Kt" [0.24929661 0.29193452 1.00000000]
+	"color Kd" [0.32704648 0.50508380 0.63999999]
+	"float index" [1.519999980926514]
+	"color Ks" [1.00000000 1.00000000 1.00000000]
+	"float uroughness" [0.196116134524345]
+	"float vroughness" [0.196116134524345]
+	"string type" ["glossytranslucent"]
+
+MakeNamedMaterial "mat1"
+	"bool onesided" ["true"]
+	"bool multibounce" ["false"]
+	"color Kt" [0.18999748 0.17618033 0.52121824]
+	"color Kd" [0.41862619 0.53834218 0.63999999]
+	"float index" [1.519999980926514]
+	"color Ks" [1.00000000 1.00000000 1.00000000]
+	"float uroughness" [0.196116134524345]
+	"float vroughness" [0.196116134524345]
+	"string type" ["glossytranslucent"]
+
+Texture "guardas_nk" "fresnel" "preset"
+	"string name" ["aluminium"]
+
+MakeNamedMaterial "guardas"
+	"float uroughness" [0.196116134524345]
+	"float vroughness" [0.044676706194878]
+	"texture fresnel" ["guardas_nk"]
+	"string type" ["metal2"]
+
+Texture "lamina" "color" "imagemap"
+	"string filename" ["apoio/herbe/grass_blade_texture.png"]
+	"integer discardmipmaps" [0]
+	"string filtertype" ["bilinear"]
+	"float gain" [1.000000000000000]
+	"float gamma" [2.200000047683716]
+	"float maxanisotropy" [8.000000000000000]
+	"string wrap" ["repeat"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+MakeNamedMaterial "relva.003"
+	"bool onesided" ["true"]
+	"bool multibounce" ["false"]
+	"texture Kt" ["lamina"]
+	"texture Kd" ["lamina"]
+	"float index" [1.519999980926514]
+	"color Ks" [1.00000000 1.00000000 1.00000000]
+	"float uroughness" [0.196116134524345]
+	"float vroughness" [0.196116134524345]
+	"string type" ["glossytranslucent"]
+
+Texture "Kd_color" "color" "imagemap"
+	"string filename" ["outdoor/Scene/00001/luxblend_extracted_image_Kd.PNG"]
+	"integer discardmipmaps" [0]
+	"float gain" [1.000000000000000]
+	"float gamma" [2.200000047683716]
+	"float maxanisotropy" [8.000000000000000]
+	"string wrap" ["repeat"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+MakeNamedMaterial "DoorFrame"
+	"bool multibounce" ["false"]
+	"texture Kd" ["Kd_color"]
+	"float index" [1.299999952316284]
+	"color Ks" [1.00000000 1.00000000 1.00000000]
+	"float uroughness" [0.081378847360611]
+	"float vroughness" [0.081378847360611]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+Texture "grunge mask_scaled_30" "float" "scale"
+	"float tex1" [0.400000005960464]
+	"texture tex2" ["grunge mask"]
+
+MakeNamedMaterial "paredes_exteriores"
+	"string namedmaterial1" ["base"]
+	"string namedmaterial2" ["sujidade"]
+	"texture amount" ["grunge mask_scaled_30"]
+	"string type" ["mix"]
+
+MakeNamedMaterial "paredes_interiores"
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+Texture "betao bump" "float" "imagemap"
+	"string filename" ["Eira_Textures/concrete_013B.jpg"]
+	"integer discardmipmaps" [0]
+	"string filtertype" ["bilinear"]
+	"float gain" [1.000000000000000]
+	"float gamma" [2.200000047683716]
+	"float maxanisotropy" [8.000000000000000]
+	"string wrap" ["repeat"]
+	"string channel" ["mean"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+Texture "betao bump_scaled_31" "float" "scale"
+	"float tex1" [0.003000000026077]
+	"texture tex2" ["betao bump"]
+
+Texture "betao_color" "color" "imagemap"
+	"string filename" ["outdoor/Scene/00001/luxblend_extracted_image_betao.PNG"]
+	"integer discardmipmaps" [0]
+	"float gain" [1.000000000000000]
+	"float gamma" [2.200000047683716]
+	"float maxanisotropy" [8.000000000000000]
+	"string wrap" ["repeat"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+MakeNamedMaterial "pavimento_exterior"
+	"texture bumpmap" ["betao bump_scaled_31"]
+	"bool multibounce" ["false"]
+	"texture Kd" ["betao_color"]
+	"float index" [1.009999990463257]
+	"color Ks" [1.00000000 1.00000000 1.00000000]
+	"float uroughness" [0.408248305320740]
+	"float vroughness" [0.408248305320740]
+	"string type" ["glossy"]
+
+Texture "peitoril bump" "float" "imagemap"
+	"string filename" ["Eira_Textures/TheaMat_01_Concrete_3_B.jpg"]
+	"integer discardmipmaps" [0]
+	"string filtertype" ["bilinear"]
+	"float gain" [1.000000000000000]
+	"float gamma" [2.200000047683716]
+	"float maxanisotropy" [8.000000000000000]
+	"string wrap" ["repeat"]
+	"string channel" ["mean"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+Texture "peitoril bump_scaled_32" "float" "scale"
+	"float tex1" [0.003000000026077]
+	"texture tex2" ["peitoril bump"]
+
+Texture "peitoril_color" "color" "imagemap"
+	"string filename" ["outdoor/Scene/00001/luxblend_extracted_image_peitoril.PNG"]
+	"integer discardmipmaps" [0]
+	"float gain" [1.000000000000000]
+	"float gamma" [2.200000047683716]
+	"float maxanisotropy" [8.000000000000000]
+	"string wrap" ["repeat"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+MakeNamedMaterial "peitoril"
+	"texture bumpmap" ["peitoril bump_scaled_32"]
+	"bool multibounce" ["false"]
+	"texture Kd" ["peitoril_color"]
+	"float index" [1.200000047683716]
+	"color Ks" [1.00000000 1.00000000 1.00000000]
+	"float uroughness" [0.140028014779091]
+	"float vroughness" [0.140028014779091]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "portao"
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+Texture "DoorFittings_nk" "fresnel" "preset"
+	"string name" ["aluminium"]
+
+MakeNamedMaterial "DoorFittings"
+	"float uroughness" [0.075000002980232]
+	"float vroughness" [0.075000002980232]
+	"texture fresnel" ["DoorFittings_nk"]
+	"string type" ["metal2"]
+
+Texture "calcada bump" "float" "imagemap"
+	"string filename" ["Eira_Textures/paving11_BUMP.jpg"]
+	"integer discardmipmaps" [0]
+	"string filtertype" ["bilinear"]
+	"float gain" [1.000000000000000]
+	"float gamma" [2.200000047683716]
+	"float maxanisotropy" [8.000000000000000]
+	"string wrap" ["repeat"]
+	"string channel" ["mean"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+Texture "calcada bump_scaled_33" "float" "scale"
+	"float tex1" [0.039999999105930]
+	"texture tex2" ["calcada bump"]
+
+Texture "calcada_color" "color" "imagemap"
+	"string filename" ["outdoor/Scene/00001/luxblend_extracted_image_calcada.PNG"]
+	"integer discardmipmaps" [0]
+	"float gain" [1.000000000000000]
+	"float gamma" [2.200000047683716]
+	"float maxanisotropy" [8.000000000000000]
+	"string wrap" ["repeat"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+MakeNamedMaterial "calcada.001"
+	"texture bumpmap" ["calcada bump_scaled_33"]
+	"texture Kd" ["calcada_color"]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+Texture "relva_alpha" "float" "imagemap"
+	"string filename" ["textures/herbe.png"]
+	"string channel" ["alpha"]
+	"string filtertype" ["bilinear"]
+	"float gamma" [1.000000000000000]
+	"string wrap" ["repeat"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+Texture "relva_color" "color" "imagemap"
+	"string filename" ["outdoor/Scene/00001/luxblend_extracted_image_relva.PNG"]
+	"integer discardmipmaps" [0]
+	"float gain" [1.000000000000000]
+	"float gamma" [2.200000047683716]
+	"float maxanisotropy" [8.000000000000000]
+	"string wrap" ["repeat"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+MakeNamedMaterial "herbe_null"
+	"string type" ["null"]
+
+MakeNamedMaterial "herbe_mat"
+	"bool onesided" ["true"]
+	"bool multibounce" ["false"]
+	"texture Kt" ["relva_color"]
+	"texture Kd" ["relva_color"]
+	"float index" [1.519999980926514]
+	"color Ks" [1.00000000 1.00000000 1.00000000]
+	"float uroughness" [0.196116134524345]
+	"float vroughness" [0.196116134524345]
+	"string type" ["glossytranslucent"]
+
+MakeNamedMaterial "herbe"
+	"string namedmaterial1" ["herbe_null"]
+	"string namedmaterial2" ["herbe_mat"]
+	"texture amount" ["relva_alpha"]
+	"string type" ["mix"]
+
+MakeNamedMaterial "Default_Material"
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "varandas"
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Caixilharia"
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+Texture "Kd.014_color" "color" "imagemap"
+	"string filename" ["outdoor/Scene/00001/luxblend_extracted_image_Kd_014.PNG"]
+	"integer discardmipmaps" [0]
+	"float gain" [1.000000000000000]
+	"float gamma" [2.200000047683716]
+	"float maxanisotropy" [8.000000000000000]
+	"string wrap" ["repeat"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+MakeNamedMaterial "godo"
+	"texture Kd" ["Kd.014_color"]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "DarkGray"
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Charcoal"
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "CorrogateShiny"
+	"color Kd" [0.63999999 0.63999999 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+Texture "bump janela" "float" "blender_clouds"
+	"float bright" [1.000000000000000]
+	"float contrast" [1.000000000000000]
+	"string noisetype" ["soft_noise"]
+	"string noisebasis" ["blender_original"]
+	"float noisesize" [1.000000000000000]
+	"integer noisedepth" [2]
+	"string coordinates" ["global"]
+	"vector translate" [0.000000000000000 0.000000000000000 0.000000000000000]
+	"vector rotate" [0.000000000000000 0.000000000000000 0.000000000000000]
+	"vector scale" [1.000000000000000 1.000000000000000 1.000000000000000]
+
+Texture "bump janela_scaled_34" "float" "scale"
+	"float tex1" [0.004999999888241]
+	"texture tex2" ["bump janela"]
+
+MakeNamedMaterial "vidro_thin_glass"
+	"texture bumpmap" ["bump janela_scaled_34"]
+	"bool architectural" ["true"]
+	"float cauchyb" [0.000000000000000]
+	"float film" [0.000000000000000]
+	"float filmindex" [1.333299994468689]
+	"float index" [1.519999980926514]
+	"color Kr" [0.69999999 0.69999999 0.69999999]
+	"color Kt" [1.00000000 1.00000000 1.00000000]
+	"string type" ["glass"]
+
+MakeNamedMaterial "DoorGlass"
+	"bool architectural" ["true"]
+	"float cauchyb" [0.000000000000000]
+	"float film" [0.000000000000000]
+	"float filmindex" [1.333299994468689]
+	"float index" [1.519999980926514]
+	"color Kr" [0.69999999 0.69999999 0.69999999]
+	"color Kt" [1.00000000 1.00000000 1.00000000]
+	"string type" ["glass"]
+
+MakeNamedMaterial "vidro porta cozinha"
+	"bool dispersion" ["false"]
+	"float cauchyb" [0.000000000000000]
+	"float index" [1.519999980926514]
+	"color Kr" [0.69999999 0.69999999 0.69999999]
+	"color Kt" [1.00000000 1.00000000 1.00000000]
+	"float uroughness" [0.075000002980232]
+	"float vroughness" [0.075000002980232]
+	"string type" ["roughglass"]
+
+MakeNamedMaterial "relvado"
+	"bool onesided" ["true"]
+	"bool multibounce" ["false"]
+	"color Kt" [0.04871738 0.07323457 0.02046952]
+	"color Kd" [0.04224699 0.09854279 0.02142436]
+	"float index" [1.519999980926514]
+	"color Ks" [1.00000000 1.00000000 1.00000000]
+	"float uroughness" [0.196116134524345]
+	"float vroughness" [0.196116134524345]
+	"string type" ["glossytranslucent"]
+
+Texture "Kd.024_alpha" "float" "imagemap"
+	"string filename" ["textures/TREE_LINE_3.PNG"]
+	"string channel" ["alpha"]
+	"string filtertype" ["bilinear"]
+	"float gamma" [1.000000000000000]
+	"string wrap" ["repeat"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+Texture "Kd.024_color" "color" "imagemap"
+	"string filename" ["outdoor/Scene/00001/luxblend_extracted_image_Kd_024.PNG"]
+	"integer discardmipmaps" [0]
+	"float gain" [1.000000000000000]
+	"float gamma" [2.200000047683716]
+	"float maxanisotropy" [8.000000000000000]
+	"string wrap" ["repeat"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+MakeNamedMaterial "TREE_LINE_3_null"
+	"string type" ["null"]
+
+MakeNamedMaterial "TREE_LINE_3_mat"
+	"texture Kd" ["Kd.024_color"]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "TREE_LINE_3"
+	"string namedmaterial1" ["TREE_LINE_3_null"]
+	"string namedmaterial2" ["TREE_LINE_3_mat"]
+	"texture amount" ["Kd.024_alpha"]
+	"string type" ["mix"]
+
+Texture "Kd.025_alpha" "float" "imagemap"
+	"string filename" ["textures/TREE_LINE_4.PNG"]
+	"string channel" ["alpha"]
+	"string filtertype" ["bilinear"]
+	"float gamma" [1.000000000000000]
+	"string wrap" ["repeat"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+Texture "Kd.025_color" "color" "imagemap"
+	"string filename" ["outdoor/Scene/00001/luxblend_extracted_image_Kd_025.PNG"]
+	"integer discardmipmaps" [0]
+	"float gain" [1.000000000000000]
+	"float gamma" [2.200000047683716]
+	"float maxanisotropy" [8.000000000000000]
+	"string wrap" ["repeat"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+MakeNamedMaterial "TREE_LINE_4_null"
+	"string type" ["null"]
+
+MakeNamedMaterial "TREE_LINE_4_mat"
+	"texture Kd" ["Kd.025_color"]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "TREE_LINE_4"
+	"string namedmaterial1" ["TREE_LINE_4_null"]
+	"string namedmaterial2" ["TREE_LINE_4_mat"]
+	"texture amount" ["Kd.025_alpha"]
+	"string type" ["mix"]
+
+Texture "Kd.022_alpha" "float" "imagemap"
+	"string filename" ["textures/TREE_LINE_1.PNG"]
+	"string channel" ["alpha"]
+	"string filtertype" ["bilinear"]
+	"float gamma" [1.000000000000000]
+	"string wrap" ["repeat"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+Texture "Kd.022_color" "color" "imagemap"
+	"string filename" ["outdoor/Scene/00001/luxblend_extracted_image_Kd_022.PNG"]
+	"integer discardmipmaps" [0]
+	"float gain" [1.000000000000000]
+	"float gamma" [2.200000047683716]
+	"float maxanisotropy" [8.000000000000000]
+	"string wrap" ["repeat"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+MakeNamedMaterial "TREE_LINE_1_null"
+	"string type" ["null"]
+
+MakeNamedMaterial "TREE_LINE_1_mat"
+	"texture Kd" ["Kd.022_color"]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "TREE_LINE_1"
+	"string namedmaterial1" ["TREE_LINE_1_null"]
+	"string namedmaterial2" ["TREE_LINE_1_mat"]
+	"texture amount" ["Kd.022_alpha"]
+	"string type" ["mix"]
+
+Texture "Kd.023_alpha" "float" "imagemap"
+	"string filename" ["textures/TREE_LINE_2.PNG"]
+	"string channel" ["alpha"]
+	"string filtertype" ["bilinear"]
+	"float gamma" [1.000000000000000]
+	"string wrap" ["repeat"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+Texture "Kd.023_color" "color" "imagemap"
+	"string filename" ["outdoor/Scene/00001/luxblend_extracted_image_Kd_023.PNG"]
+	"integer discardmipmaps" [0]
+	"float gain" [1.000000000000000]
+	"float gamma" [2.200000047683716]
+	"float maxanisotropy" [8.000000000000000]
+	"string wrap" ["repeat"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+MakeNamedMaterial "TREE_LINE_2_null"
+	"string type" ["null"]
+
+MakeNamedMaterial "TREE_LINE_2_mat"
+	"texture Kd" ["Kd.023_color"]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "TREE_LINE_2"
+	"string namedmaterial1" ["TREE_LINE_2_null"]
+	"string namedmaterial2" ["TREE_LINE_2_mat"]
+	"texture amount" ["Kd.023_alpha"]
+	"string type" ["mix"]
+
+MakeNamedMaterial "relva.002"
+	"bool onesided" ["true"]
+	"bool multibounce" ["false"]
+	"texture Kt" ["lamina"]
+	"texture Kd" ["lamina"]
+	"float index" [1.519999980926514]
+	"color Ks" [1.00000000 1.00000000 1.00000000]
+	"float uroughness" [0.196116134524345]
+	"float vroughness" [0.196116134524345]
+	"string type" ["glossytranslucent"]
+
+Texture "relva disp" "float" "imagemap"
+	"string filename" ["Eira_Textures/cesped_relieve/Grass-dis.jpg"]
+	"integer discardmipmaps" [0]
+	"string filtertype" ["bilinear"]
+	"float gain" [1.000000000000000]
+	"float gamma" [1.000000000000000]
+	"float maxanisotropy" [8.000000000000000]
+	"string wrap" ["repeat"]
+	"string channel" ["mean"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+Texture "relva disp_scaled_35" "float" "scale"
+	"float tex1" [0.004999999888241]
+	"texture tex2" ["relva disp"]
+
+Texture "relva.001_color" "color" "imagemap"
+	"string filename" ["outdoor/Scene/00001/luxblend_extracted_image_relva_001.PNG"]
+	"integer discardmipmaps" [0]
+	"float gain" [1.000000000000000]
+	"float gamma" [2.200000047683716]
+	"float maxanisotropy" [8.000000000000000]
+	"string wrap" ["repeat"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+MakeNamedMaterial "relva.001"
+	"texture bumpmap" ["relva disp_scaled_35"]
+	"texture Kd" ["relva.001_color"]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Curtain"
+	"bool energyconserving" ["true"]
+	"color Kr" [0.69999999 0.69999999 0.69999999]
+	"color Kt" [1.00000000 1.00000000 1.00000000]
+	"float sigma" [0.059999998658895]
+	"string type" ["mattetranslucent"]
+
+MakeNamedMaterial "Curtain-Null"
+	"string type" ["null"]
+
+Texture "Curtain-Mix-Amount" "float" "brick"
+	"float brickbevel" [0.000000000000000]
+	"string brickbond" ["chain link"]
+	"float brickdepth" [0.150000005960464]
+	"float brickheight" [0.100000001490116]
+	"float brickwidth" [0.300000011920929]
+	"float brickrun" [0.003000000119209]
+	"float mortarsize" [0.079999998211861]
+	"float brickmodtex" [0.899999976158142]
+	"float bricktex" [0.899999976158142]
+	"float mortartex" [0.100000001490116]
+	"string coordinates" ["global"]
+	"vector translate" [0.000000000000000 0.000000000000000 0.000000000000000]
+	"vector rotate" [0.000000000000000 0.000000000000000 0.000000000000000]
+	"vector scale" [0.003000000026077 0.003000000026077 0.006000000052154]
+
+MakeNamedMaterial "Curtain-Mix"
+	"string namedmaterial1" ["Curtain"]
+	"string namedmaterial2" ["Curtain-Null"]
+	"texture amount" ["Curtain-Mix-Amount"]
+	"string type" ["mix"]

@@ -1,0 +1,19 @@
+Texture "mat_bump+normal_generated" "float" "multimix"
+	"texture tex1" [""]
+	"texture tex2" [""]
+	"float weights" [0.000000000000000 1.000000000000000]
+
+MakeNamedMaterial "mat"
+	"texture bumpmap" ["mat_bump+normal_generated"]
+	"bool multibounce" ["false"]
+	"color Kd" [0.5 0.5 0.5]
+	"string type" ["matte"]
+
+AttributeBegin
+NamedMaterial "mat"
+Shape "plymesh"
+	"string filename" ["lucy/lucy.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["lucy"]
+	"bool active" ["true"]
+AttributeEnd # ""

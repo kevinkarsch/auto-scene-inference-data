@@ -1,0 +1,1079 @@
+# Geometry File
+
+AttributeBegin #  "bowl 3"
+
+Transform [0.883757948875427 0.467932581901550 -0.003323297947645 0.000000000000000 -0.467894285917282 0.883744955062866 0.008353033103049 0.000000000000000 0.006845604162663 -0.005827107001096 0.999959588050842 0.000000000000000 -0.834900796413422 2.329551458358765 0.005731089971960 1.000000000000000]
+
+NamedMaterial "bowl 3 glass"
+
+Interior  "bowl 3"
+
+Exterior  "room"
+
+Shape "plymesh"
+	"string filename" ["table/Scene/00000/Cube_005_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["bowl 3"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "bowl 2"
+
+Transform [0.890635788440704 0.453596115112305 0.031912650913000 0.000000000000000 -0.452945083379745 0.891167223453522 -0.025723425671458 0.000000000000000 -0.040107555687428 0.008455524221063 0.999159574508667 0.000000000000000 -0.834354400634766 2.335401773452759 -0.004622934851795 1.000000000000000]
+
+NamedMaterial "bowl 2 glass"
+
+Interior  "bowl 2"
+
+Exterior  "room"
+
+Shape "plymesh"
+	"string filename" ["table/Scene/00000/Cube_002_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["bowl 2"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "bowl 1"
+
+Transform [1.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 1.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 1.000000000000000 0.000000000000000 -0.836704671382904 2.332542657852173 -0.016291871666908 1.000000000000000]
+
+NamedMaterial "bowl 1 glass"
+
+Interior  "bowl 1"
+
+Exterior  "room"
+
+Shape "plymesh"
+	"string filename" ["table/Scene/00000/Cube_003_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["bowl 1"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "calender"
+
+Transform [0.147494897246361 0.000000000000000 -0.001226145541295 0.000000000000000 0.000000000000000 8388.608398437500000 0.000000000000000 0.000000000000000 0.001724916626699 0.000000000000000 0.207492828369141 0.000000000000000 -0.634156405925751 2.437008619308472 0.511674106121063 1.000000000000000]
+
+NamedMaterial "calender"
+
+Exterior  "room"
+
+Shape "plymesh"
+	"string filename" ["table/Scene/00000/Plane_004_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["calender"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "cabinet plugs"
+
+Transform [1.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 -0.000000162920685 1.000000000000000 0.000000000000000 0.000000000000000 -1.000000000000000 -0.000000162920685 0.000000000000000 -0.521261513233185 2.442594528198242 0.134679168462753 1.000000000000000]
+
+NamedMaterial "cabinet plugs"
+
+Exterior  "room"
+
+Shape "plymesh"
+	"string filename" ["table/Scene/00000/Circle_005_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["cabinet plugs"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Plane.001"
+
+Transform [0.735601484775543 0.642509102821350 -0.214645117521286 0.000000000000000 -0.428550690412521 0.195988625288010 -0.882004976272583 0.000000000000000 -0.524628221988678 0.740790486335754 0.419517248868942 0.000000000000000 -0.644065797328949 1.484741926193237 0.753973305225372 1.000000000000000]
+
+NamedMaterial "Material"
+
+LightGroup "lamp3"
+
+AreaLightSource "area"
+	"float importance" [1.000000000000000]
+	"float gain" [1.500000000000000]
+	"float power" [0.100000001490116]
+	"float efficacy" [17.000000000000000]
+	"integer nsamples" [1]
+	"color L" [1.00000000 1.00000000 1.00000000]
+	"string iesname" ["light profile 1.ies"]
+
+Exterior  "room"
+
+Shape "plymesh"
+	"string filename" ["table/Scene/00000/Plane_015_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Plane.001"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "lamp emitter plane"
+
+Transform [1.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 1.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 1.000000000000000 0.000000000000000 -0.041782140731812 0.950051665306091 0.987371921539307 1.000000000000000]
+
+NamedMaterial "lamp emitter"
+
+LightGroup "lamp1"
+
+AreaLightSource "area"
+	"float importance" [1.000000000000000]
+	"float gain" [1.000000000000000]
+	"float power" [5.000000000000000]
+	"float efficacy" [17.000000000000000]
+	"integer nsamples" [1]
+	"texture L" ["lamp spectrum"]
+
+Exterior  "room"
+
+Shape "plymesh"
+	"string filename" ["table/Scene/00000/Plane_014_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["lamp emitter plane"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "spice type 4"
+
+Transform [1.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 1.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 1.000000000000000 0.000000000000000 -0.887804925441742 2.394906520843506 0.294941514730453 1.000000000000000]
+
+NamedMaterial "spice 4"
+
+Exterior  "room"
+
+Shape "plymesh"
+	"string filename" ["table/Scene/00000/Circle_009_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["spice type 4"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "spice type 3"
+
+Transform [1.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 1.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 1.000000000000000 0.000000000000000 -0.846081137657166 2.401432037353516 0.294941514730453 1.000000000000000]
+
+NamedMaterial "spice 3"
+
+Exterior  "room"
+
+Shape "plymesh"
+	"string filename" ["table/Scene/00000/Circle_008_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["spice type 3"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "spice type 2"
+
+Transform [1.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 1.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 1.000000000000000 0.000000000000000 -0.846081137657166 2.363730430603027 0.294941514730453 1.000000000000000]
+
+NamedMaterial "spice 2"
+
+Exterior  "room"
+
+Shape "plymesh"
+	"string filename" ["table/Scene/00000/Circle_007_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["spice type 2"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "spice can 4"
+
+Transform [1.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 1.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 1.000000000000000 0.000000000000000 -0.887785077095032 2.395325899124146 0.294941514730453 1.000000000000000]
+
+AttributeBegin #  ""
+
+NamedMaterial "aluminum"
+
+Exterior  "room"
+
+Shape "plymesh"
+	"string filename" ["table/Scene/00000/Circle_003_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["spice can 4"]
+
+AttributeEnd # ""
+
+AttributeBegin #  ""
+
+NamedMaterial "spices glass"
+
+Interior  "glass"
+
+Exterior  "room"
+
+Shape "plymesh"
+	"string filename" ["table/Scene/00000/Circle_003_0000_m001.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["spice can 4"]
+
+AttributeEnd # ""
+
+AttributeEnd # ""
+
+AttributeBegin #  "spice can 3"
+
+Transform [1.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 1.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 1.000000000000000 0.000000000000000 -0.846081137657166 2.401657819747925 0.294941514730453 1.000000000000000]
+
+AttributeBegin #  ""
+
+NamedMaterial "aluminum"
+
+Exterior  "room"
+
+Shape "plymesh"
+	"string filename" ["table/Scene/00000/Circle_003_0001_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["spice can 3"]
+
+AttributeEnd # ""
+
+AttributeBegin #  ""
+
+NamedMaterial "spices glass"
+
+Interior  "glass"
+
+Exterior  "room"
+
+Shape "plymesh"
+	"string filename" ["table/Scene/00000/Circle_003_0001_m001.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["spice can 3"]
+
+AttributeEnd # ""
+
+AttributeEnd # ""
+
+AttributeBegin #  "spice can 2"
+
+Transform [1.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 1.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 1.000000000000000 0.000000000000000 -0.846081137657166 2.363434791564941 0.294941514730453 1.000000000000000]
+
+AttributeBegin #  ""
+
+NamedMaterial "aluminum"
+
+Exterior  "room"
+
+Shape "plymesh"
+	"string filename" ["table/Scene/00000/Circle_003_0002_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["spice can 2"]
+
+AttributeEnd # ""
+
+AttributeBegin #  ""
+
+NamedMaterial "spices glass"
+
+Interior  "glass"
+
+Exterior  "room"
+
+Shape "plymesh"
+	"string filename" ["table/Scene/00000/Circle_003_0002_m001.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["spice can 2"]
+
+AttributeEnd # ""
+
+AttributeEnd # ""
+
+AttributeBegin #  "spice type 1"
+
+Transform [1.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 1.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 1.000000000000000 0.000000000000000 -0.846081137657166 2.319136619567871 0.294941514730453 1.000000000000000]
+
+NamedMaterial "spice 1"
+
+Exterior  "room"
+
+Shape "plymesh"
+	"string filename" ["table/Scene/00000/Circle_004_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["spice type 1"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "spice can 1"
+
+Transform [1.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 1.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 1.000000000000000 0.000000000000000 -0.846081137657166 2.319136619567871 0.294941514730453 1.000000000000000]
+
+AttributeBegin #  ""
+
+NamedMaterial "aluminum"
+
+Exterior  "room"
+
+Shape "plymesh"
+	"string filename" ["table/Scene/00000/Circle_003_0003_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["spice can 1"]
+
+AttributeEnd # ""
+
+AttributeBegin #  ""
+
+NamedMaterial "spices glass"
+
+Interior  "glass"
+
+Exterior  "room"
+
+Shape "plymesh"
+	"string filename" ["table/Scene/00000/Circle_003_0003_m001.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["spice can 1"]
+
+AttributeEnd # ""
+
+AttributeEnd # ""
+
+AttributeBegin #  "spice box"
+
+Transform [1.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 1.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 1.000000000000000 0.000000000000000 -0.867058157920837 2.358279228210449 0.300193190574646 1.000000000000000]
+
+AttributeBegin #  ""
+
+NamedMaterial "aluminum"
+
+Exterior  "room"
+
+Shape "plymesh"
+	"string filename" ["table/Scene/00000/Cube_004_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["spice box"]
+
+AttributeEnd # ""
+
+AttributeBegin #  ""
+
+NamedMaterial "alu rubber cover"
+
+Exterior  "room"
+
+Shape "plymesh"
+	"string filename" ["table/Scene/00000/Cube_004_0000_m001.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["spice box"]
+
+AttributeEnd # ""
+
+AttributeEnd # ""
+
+AttributeBegin #  "Circle.006"
+
+Transform [0.998460650444031 -0.055448140949011 -0.001340070273727 0.000000000000000 0.055433526635170 0.998419940471649 -0.009203942492604 0.000000000000000 0.001848294283263 0.009115489199758 0.999956727027893 0.000000000000000 -0.847244799137115 2.295464038848877 -0.283648788928986 1.000000000000000]
+
+AttributeBegin #  ""
+
+NamedMaterial "alu rubber cover"
+
+Exterior  "room"
+
+Shape "plymesh"
+	"string filename" ["table/Scene/00000/Circle_001_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Circle.006"]
+
+AttributeEnd # ""
+
+AttributeBegin #  ""
+
+NamedMaterial "aluminum"
+
+Exterior  "room"
+
+Shape "plymesh"
+	"string filename" ["table/Scene/00000/Circle_001_0000_m001.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Circle.006"]
+
+AttributeEnd # ""
+
+AttributeEnd # ""
+
+AttributeBegin #  "Circle.005"
+
+Transform [0.830950856208801 -0.556340456008911 -0.002445282647386 0.000000000000000 0.556332290172577 0.830891966819763 0.010628001764417 0.000000000000000 -0.003881021868438 -0.010191736742854 0.999940514564514 0.000000000000000 -0.847244799137115 2.277345895767212 -0.293809145689011 1.000000000000000]
+
+AttributeBegin #  ""
+
+NamedMaterial "alu rubber cover"
+
+Exterior  "room"
+
+Shape "plymesh"
+	"string filename" ["table/Scene/00000/Circle_001_0001_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Circle.005"]
+
+AttributeEnd # ""
+
+AttributeBegin #  ""
+
+NamedMaterial "aluminum"
+
+Exterior  "room"
+
+Shape "plymesh"
+	"string filename" ["table/Scene/00000/Circle_001_0001_m001.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Circle.005"]
+
+AttributeEnd # ""
+
+AttributeEnd # ""
+
+AttributeBegin #  "Circle.004"
+
+Transform [0.950951337814331 -0.309340596199036 0.000000000000000 0.000000000000000 0.309340596199036 0.950951337814331 0.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 1.000000000000000 0.000000000000000 -0.843394339084625 2.290097236633301 -0.303982436656952 1.000000000000000]
+
+AttributeBegin #  ""
+
+NamedMaterial "alu rubber cover"
+
+Exterior  "room"
+
+Shape "plymesh"
+	"string filename" ["table/Scene/00000/Circle_001_0002_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Circle.004"]
+
+AttributeEnd # ""
+
+AttributeBegin #  ""
+
+NamedMaterial "aluminum"
+
+Exterior  "room"
+
+Shape "plymesh"
+	"string filename" ["table/Scene/00000/Circle_001_0002_m001.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Circle.004"]
+
+AttributeEnd # ""
+
+AttributeEnd # ""
+
+AttributeBegin #  "bottle 1"
+
+Transform [1.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 1.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 1.000000000000000 0.000000000000000 -0.902348279953003 2.396308898925781 -0.615801155567169 1.000000000000000]
+
+NamedMaterial "bottle 1 glass "
+
+Interior  "glass"
+
+Exterior  "room"
+
+Shape "plymesh"
+	"string filename" ["table/Scene/00000/Plane_008_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["bottle 1"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "bottle 1 liquidsurfac"
+
+Transform [1.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 1.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 1.000000000000000 0.000000000000000 -0.902348279953003 2.396308898925781 -0.615801155567169 1.000000000000000]
+
+NamedMaterial "bottle 1 liquidsurfac"
+
+Interior  "vodka"
+
+Exterior  "room"
+
+Shape "plymesh"
+	"string filename" ["table/Scene/00000/Plane_011_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["bottle 1 liquidsurfac"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "bottle 1 liquid"
+
+Transform [1.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 1.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 1.000000000000000 0.000000000000000 -0.902348279953003 2.396308898925781 -0.615801155567169 1.000000000000000]
+
+NamedMaterial "bottle 1 liquid"
+
+Interior  "vodka"
+
+Exterior  "glass"
+
+Shape "plymesh"
+	"string filename" ["table/Scene/00000/Plane_009_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["bottle 1 liquid"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "bottle 1 cork"
+
+Transform [1.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 1.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 1.000000000000000 0.000000000000000 -0.902348279953003 2.396581172943115 -0.351801514625549 1.000000000000000]
+
+NamedMaterial "bottle 1 cork"
+
+Exterior  "room"
+
+Shape "plymesh"
+	"string filename" ["table/Scene/00000/Circle_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["bottle 1 cork"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Plane"
+
+Transform [1.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 1.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 1.000000000000000 0.000000000000000 -0.875913977622986 2.396572351455688 -0.506363272666931 1.000000000000000]
+
+NamedMaterial "bottle 1 label"
+
+Exterior  "room"
+
+Shape "plymesh"
+	"string filename" ["table/Scene/00000/Plane_012_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Plane"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "cabinet"
+
+Transform [1.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 1.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 1.000000000000000 0.000000000000000 -0.682858526706696 2.690074205398560 0.071459323167801 1.000000000000000]
+
+NamedMaterial "cabinet frame"
+
+Exterior  "room"
+
+Shape "plymesh"
+	"string filename" ["table/Scene/00000/Plane_001_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["cabinet"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "cabinet door panels"
+
+Transform [0.000000075497901 1.000000000000000 0.000000000000000 0.000000000000000 -1.000000000000000 0.000000075497901 0.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 1.000000000000000 0.000000000000000 -0.438341349363327 2.644091844558716 0.175913617014885 1.000000000000000]
+
+NamedMaterial "cabinet door panel"
+
+Exterior  "room"
+
+Shape "plymesh"
+	"string filename" ["table/Scene/00000/Plane_007_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["cabinet door panels"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Plane.004"
+
+Transform [1.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 1.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 1.000000000000000 0.000000000000000 -0.791149020195007 2.283686637878418 -0.627379179000854 1.000000000000000]
+
+AttributeBegin #  ""
+
+NamedMaterial "corner shelf white"
+
+Exterior  "room"
+
+Shape "plymesh"
+	"string filename" ["table/Scene/00000/Plane_002_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Plane.004"]
+
+AttributeEnd # ""
+
+AttributeBegin #  ""
+
+NamedMaterial "corner shelf wood"
+
+Exterior  "room"
+
+Shape "plymesh"
+	"string filename" ["table/Scene/00000/Plane_002_0000_m001.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Plane.004"]
+
+AttributeEnd # ""
+
+AttributeEnd # ""
+
+AttributeBegin #  "cabinet door frame"
+
+Transform [0.000000075497901 1.000000000000000 0.000000000000000 0.000000000000000 -1.000000000000000 0.000000075497901 0.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 1.000000000000000 0.000000000000000 -0.438341349363327 2.644091844558716 0.175913617014885 1.000000000000000]
+
+NamedMaterial "cabinet door"
+
+Exterior  "room"
+
+Shape "plymesh"
+	"string filename" ["table/Scene/00000/Plane_016_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["cabinet door frame"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "cabinet door handle 1"
+
+Transform [-0.000000000478950 0.006428360473365 -0.999979317188263 0.000000000000000 -1.000000000000000 -0.000000464904218 -0.000000002503296 0.000000000000000 -0.000000463918639 0.999979317188263 0.006428360473365 0.000000000000000 -0.401786625385284 2.481458902359009 0.178685262799263 1.000000000000000]
+
+NamedMaterial "drawer handle"
+
+Exterior  "room"
+
+Shape "plymesh"
+	"string filename" ["table/Scene/00000/Circle_000_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["cabinet door handle 1"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Circle.003"
+
+Transform [0.978641390800476 -0.204025194048882 0.025193819776177 0.000000000000000 0.203821942210197 0.978952586650848 0.010415420867503 0.000000000000000 -0.026788562536240 -0.005057908594608 0.999628305435181 0.000000000000000 -0.822048783302307 0.950594186782837 0.013915755786002 1.000000000000000]
+
+AttributeBegin #  ""
+
+NamedMaterial "alu rubber cover"
+
+Exterior  "room"
+
+Shape "plymesh"
+	"string filename" ["table/Scene/00000/Circle_001_0003_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Circle.003"]
+
+AttributeEnd # ""
+
+AttributeBegin #  ""
+
+NamedMaterial "aluminum"
+
+Exterior  "room"
+
+Shape "plymesh"
+	"string filename" ["table/Scene/00000/Circle_001_0003_m001.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Circle.003"]
+
+AttributeEnd # ""
+
+AttributeEnd # ""
+
+AttributeBegin #  "table pad 4"
+
+Transform [0.998795270919800 0.049071863293648 0.000000000000000 0.000000000000000 -0.049071863293648 0.998795270919800 0.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 1.000000000000000 0.000000000000000 -0.810373306274414 1.068212389945984 0.002008249051869 1.000000000000000]
+
+AttributeBegin #  ""
+
+NamedMaterial "table pad light"
+
+Exterior  "room"
+
+Shape "plymesh"
+	"string filename" ["table/Scene/00000/Cube_001_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["table pad 4"]
+
+AttributeEnd # ""
+
+AttributeBegin #  ""
+
+NamedMaterial "table pad threads"
+
+Exterior  "room"
+
+Shape "plymesh"
+	"string filename" ["table/Scene/00000/Cube_001_0000_m001.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["table pad 4"]
+
+AttributeEnd # ""
+
+AttributeBegin #  ""
+
+NamedMaterial "table pad dark"
+
+Exterior  "room"
+
+Shape "plymesh"
+	"string filename" ["table/Scene/00000/Cube_001_0000_m002.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["table pad 4"]
+
+AttributeEnd # ""
+
+AttributeEnd # ""
+
+AttributeBegin #  "table pad 3"
+
+Transform [0.998795270919800 0.049071863293648 0.000000000000000 0.000000000000000 -0.049071863293648 0.998795270919800 0.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 1.000000000000000 0.000000000000000 -0.289396584033966 1.068212389945984 0.001493577845395 1.000000000000000]
+
+AttributeBegin #  ""
+
+NamedMaterial "table pad light"
+
+Exterior  "room"
+
+Shape "plymesh"
+	"string filename" ["table/Scene/00000/Cube_001_0001_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["table pad 3"]
+
+AttributeEnd # ""
+
+AttributeBegin #  ""
+
+NamedMaterial "table pad threads"
+
+Exterior  "room"
+
+Shape "plymesh"
+	"string filename" ["table/Scene/00000/Cube_001_0001_m001.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["table pad 3"]
+
+AttributeEnd # ""
+
+AttributeBegin #  ""
+
+NamedMaterial "table pad dark"
+
+Exterior  "room"
+
+Shape "plymesh"
+	"string filename" ["table/Scene/00000/Cube_001_0001_m002.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["table pad 3"]
+
+AttributeEnd # ""
+
+AttributeEnd # ""
+
+AttributeBegin #  "table pad 2"
+
+Transform [0.998795270919800 0.049071863293648 0.000000000000000 0.000000000000000 -0.049071863293648 0.998795270919800 0.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 1.000000000000000 0.000000000000000 -0.245014131069183 0.690410852432251 0.000884488457814 1.000000000000000]
+
+AttributeBegin #  ""
+
+NamedMaterial "table pad light"
+
+Exterior  "room"
+
+Shape "plymesh"
+	"string filename" ["table/Scene/00000/Cube_001_0002_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["table pad 2"]
+
+AttributeEnd # ""
+
+AttributeBegin #  ""
+
+NamedMaterial "table pad threads"
+
+Exterior  "room"
+
+Shape "plymesh"
+	"string filename" ["table/Scene/00000/Cube_001_0002_m001.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["table pad 2"]
+
+AttributeEnd # ""
+
+AttributeBegin #  ""
+
+NamedMaterial "table pad dark"
+
+Exterior  "room"
+
+Shape "plymesh"
+	"string filename" ["table/Scene/00000/Cube_001_0002_m002.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["table pad 2"]
+
+AttributeEnd # ""
+
+AttributeEnd # ""
+
+AttributeBegin #  "table pad 1"
+
+Transform [0.998795270919800 0.049071863293648 0.000000000000000 0.000000000000000 -0.049071863293648 0.998795270919800 0.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 1.000000000000000 0.000000000000000 -0.810373306274414 0.690410852432251 0.002008249051869 1.000000000000000]
+
+AttributeBegin #  ""
+
+NamedMaterial "table pad light"
+
+Exterior  "room"
+
+Shape "plymesh"
+	"string filename" ["table/Scene/00000/Cube_001_0003_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["table pad 1"]
+
+AttributeEnd # ""
+
+AttributeBegin #  ""
+
+NamedMaterial "table pad threads"
+
+Exterior  "room"
+
+Shape "plymesh"
+	"string filename" ["table/Scene/00000/Cube_001_0003_m001.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["table pad 1"]
+
+AttributeEnd # ""
+
+AttributeBegin #  ""
+
+NamedMaterial "table pad dark"
+
+Exterior  "room"
+
+Shape "plymesh"
+	"string filename" ["table/Scene/00000/Cube_001_0003_m002.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["table pad 1"]
+
+AttributeEnd # ""
+
+AttributeEnd # ""
+
+AttributeBegin #  "chair 4"
+
+Transform [0.679619908332825 0.733564436435699 0.000000000000000 0.000000000000000 -0.733564436435699 0.679619908332825 0.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 1.000000000000000 0.000000000000000 -0.758647978305817 0.111788034439087 -0.107838600873947 1.000000000000000]
+
+NamedMaterial "table and chair wood"
+
+Exterior  "room"
+
+Shape "plymesh"
+	"string filename" ["table/Scene/00000/Plane_003_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["chair 4"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Cube.003"
+
+Transform [0.679619908332825 0.733564436435699 0.000000000000000 0.000000000000000 -0.733564436435699 0.679619908332825 0.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 1.000000000000000 0.000000000000000 -0.491439402103424 0.400828778743744 -0.278649806976318 1.000000000000000]
+
+NamedMaterial "chair fabric"
+
+Exterior  "room"
+
+Shape "plymesh"
+	"string filename" ["table/Scene/00000/Cube_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Cube.003"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "chair 3"
+
+Transform [-0.142037957906723 0.989861190319061 0.000000000000000 0.000000000000000 -0.989861190319061 -0.142037957906723 0.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 1.000000000000000 0.000000000000000 -0.035707063972950 0.432881563901901 -0.107838600873947 1.000000000000000]
+
+NamedMaterial "table and chair wood"
+
+Exterior  "room"
+
+Shape "plymesh"
+	"string filename" ["table/Scene/00000/Plane_003_0001_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["chair 3"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Cube.002"
+
+Transform [-0.142037957906723 0.989861190319061 0.000000000000000 0.000000000000000 -0.989861190319061 -0.142037957906723 0.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 1.000000000000000 0.000000000000000 -0.092036426067352 0.822460770606995 -0.278649806976318 1.000000000000000]
+
+NamedMaterial "chair fabric"
+
+Exterior  "room"
+
+Shape "plymesh"
+	"string filename" ["table/Scene/00000/Cube_0001_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Cube.002"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "chair 2"
+
+Transform [-0.181157127022743 -0.983454167842865 0.000000000000000 0.000000000000000 0.983454167842865 -0.181157127022743 0.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 1.000000000000000 0.000000000000000 -0.030659092590213 1.647649168968201 -0.107838600873947 1.000000000000000]
+
+NamedMaterial "table and chair wood"
+
+Exterior  "room"
+
+Shape "plymesh"
+	"string filename" ["table/Scene/00000/Plane_003_0002_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["chair 2"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Cube.001"
+
+Transform [-0.181157127022743 -0.983454167842865 0.000000000000000 0.000000000000000 0.983454167842865 -0.181157127022743 0.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 1.000000000000000 0.000000000000000 -0.101551830768585 1.260455131530762 -0.278649806976318 1.000000000000000]
+
+NamedMaterial "chair fabric"
+
+Exterior  "room"
+
+Shape "plymesh"
+	"string filename" ["table/Scene/00000/Cube_0002_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Cube.001"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "table"
+
+Transform [0.999715089797974 0.023869037628174 0.000000000000000 0.000000000000000 -0.023869037628174 0.999715089797974 0.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 1.000000000000000 0.000000000000000 -0.318928450345993 0.879242837429047 -0.143238395452499 1.000000000000000]
+
+NamedMaterial "table and chair wood"
+
+Exterior  "room"
+
+Shape "plymesh"
+	"string filename" ["table/Scene/00000/Plane_021_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["table"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "chair 1"
+
+Transform [0.110165007412434 -0.993913292884827 0.000000000000000 0.000000000000000 0.993913292884827 0.110165007412434 0.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 1.000000000000000 0.000000000000000 -0.580904960632324 1.499372959136963 -0.107838600873947 1.000000000000000]
+
+NamedMaterial "table and chair wood"
+
+Exterior  "room"
+
+Shape "plymesh"
+	"string filename" ["table/Scene/00000/Plane_003_0003_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["chair 1"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Cube"
+
+Transform [0.110165007412434 -0.993913292884827 0.000000000000000 0.000000000000000 0.993913292884827 0.110165007412434 0.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 1.000000000000000 0.000000000000000 -0.537120044231415 1.108185172080994 -0.278649806976318 1.000000000000000]
+
+NamedMaterial "chair fabric"
+
+Exterior  "room"
+
+Shape "plymesh"
+	"string filename" ["table/Scene/00000/Cube_0003_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Cube"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "room back light"
+
+Transform [0.995095908641815 -0.014390207827091 0.097862504422665 0.000000000000000 -0.011650443077087 -0.999525606632233 -0.028510132804513 0.000000000000000 0.098226338624954 0.027230175212026 -0.994791507720947 0.000000000000000 2.459927558898926 4.418831348419189 2.010275363922119 1.000000000000000]
+
+NamedMaterial "light1"
+
+LightGroup "lamp2"
+
+AreaLightSource "area"
+	"float importance" [1.000000000000000]
+	"float gain" [1.000000000000000]
+	"float power" [20.000000000000000]
+	"float efficacy" [17.000000000000000]
+	"integer nsamples" [1]
+	"color L" [1.00000000 1.00000000 1.00000000]
+
+Exterior  "room"
+
+Shape "plymesh"
+	"string filename" ["table/Scene/00000/Plane_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["room back light"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "floor"
+
+Transform [1.215170621871948 0.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 1.215170621871948 0.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 1.215170621871948 0.000000000000000 3.597616195678711 2.564374923706055 -0.741037487983704 1.000000000000000]
+
+NamedMaterial "floor"
+
+Exterior  "room"
+
+Shape "plymesh"
+	"string filename" ["table/Scene/00000/floor_plaintextures_j_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["floor"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Floor list"
+
+Transform [0.000000075497901 1.000000000000000 0.000000000000000 0.000000000000000 -1.000000000000000 0.000000075497901 0.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 1.000000000000000 0.000000000000000 -0.935523033142090 0.624594330787659 -0.701758384704590 1.000000000000000]
+
+NamedMaterial "Floor list"
+
+Exterior  "room"
+
+Shape "plymesh"
+	"string filename" ["table/Scene/00000/Cube_016_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Floor list"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "walls ceiling"
+
+Transform [1.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 1.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 1.000000000000000 0.000000000000000 3.550344705581665 1.017409443855286 0.447934776544571 1.000000000000000]
+
+NamedMaterial "Room wallcovers"
+
+Exterior  "room"
+
+Shape "plymesh"
+	"string filename" ["table/Scene/00000/Cube_010_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["walls ceiling"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "wall socket"
+
+Transform [-0.000000337766238 1.000000000000000 0.000000000000000 0.000000000000000 -1.000000000000000 -0.000000337766238 0.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 1.000000000000000 0.000000000000000 -0.944436967372894 0.996010661125183 -0.576952576637268 1.000000000000000]
+
+AttributeBegin #  ""
+
+NamedMaterial "wall socket"
+
+Exterior  "room"
+
+Shape "plymesh"
+	"string filename" ["table/Scene/00000/Plane_010_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["wall socket"]
+
+AttributeEnd # ""
+
+AttributeBegin #  ""
+
+NamedMaterial "wall socket black"
+
+Exterior  "room"
+
+Shape "plymesh"
+	"string filename" ["table/Scene/00000/Plane_010_0000_m001.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["wall socket"]
+
+AttributeEnd # ""
+
+AttributeEnd # ""

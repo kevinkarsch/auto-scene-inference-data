@@ -1,0 +1,633 @@
+#-------------------------------------------------
+#    floor_lamp
+#-------------------------------------------------
+# Materials File
+
+MakeNamedMaterial "Lamp chrome.002"
+	"float uroughness" [0.008000000379980]
+	"float vroughness" [0.008000000379980]
+	"string name" ["amorphous carbon"]
+	"string type" ["metal"]
+
+MakeNamedMaterial "Lamp chrome.003"
+	"float uroughness" [0.008000000379980]
+	"float vroughness" [0.008000000379980]
+	"string name" ["amorphous carbon"]
+	"string type" ["metal"]
+
+MakeNamedMaterial "Lamp chrome.001"
+	"float uroughness" [0.008000000379980]
+	"float vroughness" [0.008000000379980]
+	"string name" ["amorphous carbon"]
+	"string type" ["metal"]
+
+MakeNamedMaterial "Screws alu"
+	"float uroughness" [0.600000023841858]
+	"float vroughness" [0.600000023841858]
+	"string name" ["aluminium"]
+	"string type" ["metal"]
+
+MakeNamedMaterial "Lamp chrome.004"
+	"float uroughness" [0.008000000379980]
+	"float vroughness" [0.008000000379980]
+	"string name" ["amorphous carbon"]
+	"string type" ["metal"]
+
+MakeNamedMaterial "Lamp chrome.005"
+	"float uroughness" [0.008000000379980]
+	"float vroughness" [0.008000000379980]
+	"string name" ["amorphous carbon"]
+	"string type" ["metal"]
+
+MakeNamedMaterial "Lamp chrome.006"
+	"float uroughness" [0.008000000379980]
+	"float vroughness" [0.008000000379980]
+	"string name" ["amorphous carbon"]
+	"string type" ["metal"]
+
+MakeNamedMaterial "Lamp chrome.007"
+	"float uroughness" [0.008000000379980]
+	"float vroughness" [0.008000000379980]
+	"string name" ["amorphous carbon"]
+	"string type" ["metal"]
+
+MakeNamedMaterial "Lamp chrome.008"
+	"float uroughness" [0.008000000379980]
+	"float vroughness" [0.008000000379980]
+	"string name" ["amorphous carbon"]
+	"string type" ["metal"]
+
+MakeNamedMaterial "Lamp alu reflectors.001"
+	"float uroughness" [0.400000005960464]
+	"float vroughness" [0.400000005960464]
+	"string name" ["aluminium"]
+	"string type" ["metal"]
+
+Texture "Lamp iron.001_nk" "fresnel" "fresnelcolor"
+	"color Kr" [0.60665363 0.60665363 0.60665363]
+
+MakeNamedMaterial "Lamp iron.001"
+	"float uroughness" [0.075000002980232]
+	"float vroughness" [0.075000002980232]
+	"texture fresnel" ["Lamp iron.001_nk"]
+	"string type" ["metal2"]
+
+MakeNamedMaterial "Lamp chrome.009"
+	"float uroughness" [0.008000000379980]
+	"float vroughness" [0.008000000379980]
+	"string name" ["amorphous carbon"]
+	"string type" ["metal"]
+
+MakeNamedMaterial "Lamp alu reflectors.002"
+	"float uroughness" [0.400000005960464]
+	"float vroughness" [0.400000005960464]
+	"string name" ["aluminium"]
+	"string type" ["metal"]
+
+Texture "Lamp iron.002_nk" "fresnel" "fresnelcolor"
+	"color Kr" [0.60665363 0.60665363 0.60665363]
+
+MakeNamedMaterial "Lamp iron.002"
+	"float uroughness" [0.075000002980232]
+	"float vroughness" [0.075000002980232]
+	"texture fresnel" ["Lamp iron.002_nk"]
+	"string type" ["metal2"]
+
+MakeNamedMaterial "Lamp glass.001"
+	"bool architectural" ["true"]
+	"float cauchyb" [0.000000000000000]
+	"float film" [0.000000000000000]
+	"float filmindex" [1.333299994468689]
+	"float index" [1.519999980926514]
+	"color Kr" [0.69999999 0.69999999 0.69999999]
+	"color Kt" [1.00000000 1.00000000 1.00000000]
+	"string type" ["glass"]
+
+MakeNamedMaterial "Lamp middle white mat"
+	"color Kd" [0.52665353 0.52665353 0.52665353]
+	"float sigma" [30.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Lamp middle black mat"
+	"color Kd" [0.05332031 0.05332031 0.05332031]
+	"float sigma" [30.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Lamp glass"
+	"bool architectural" ["true"]
+	"float cauchyb" [0.000000000000000]
+	"float film" [0.000000000000000]
+	"float filmindex" [1.333299994468689]
+	"float index" [1.519999980926514]
+	"color Kr" [0.69999999 0.69999999 0.69999999]
+	"color Kt" [1.00000000 1.00000000 1.00000000]
+	"string type" ["glass"]
+
+MakeNamedMaterial "Lamp middle filament"
+	"string type" ["null"]
+
+Texture "Lamp iron.003_nk" "fresnel" "fresnelcolor"
+	"color Kr" [0.60665363 0.60665363 0.60665363]
+
+MakeNamedMaterial "Lamp iron.003"
+	"float uroughness" [0.075000002980232]
+	"float vroughness" [0.075000002980232]
+	"texture fresnel" ["Lamp iron.003_nk"]
+	"string type" ["metal2"]
+
+MakeNamedMaterial "Lamp chrome.010"
+	"float uroughness" [0.008000000379980]
+	"float vroughness" [0.008000000379980]
+	"string name" ["amorphous carbon"]
+	"string type" ["metal"]
+
+MakeNamedMaterial "Lamp foot rubber"
+	"color Kd" [0.06665363 0.06665363 0.06665363]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "plastic black"
+	"bool multibounce" ["false"]
+	"bool separable" ["true"]
+	"color Kd" [0.00665344 0.00665344 0.00665344]
+	"color Ks" [0.04000000 0.04000000 0.04000000]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.200000002980232]
+	"float vroughness" [0.200000002980232]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "Lamp chrome"
+	"float uroughness" [0.008000000379980]
+	"float vroughness" [0.008000000379980]
+	"string name" ["amorphous carbon"]
+	"string type" ["metal"]
+
+MakeNamedMaterial "Lamp alu reflectors"
+	"float uroughness" [0.400000005960464]
+	"float vroughness" [0.400000005960464]
+	"string name" ["aluminium"]
+	"string type" ["metal"]
+
+Texture "Lamp iron.004_nk" "fresnel" "fresnelcolor"
+	"color Kr" [0.60665363 0.60665363 0.60665363]
+
+MakeNamedMaterial "Lamp iron.004"
+	"float uroughness" [0.075000002980232]
+	"float vroughness" [0.075000002980232]
+	"texture fresnel" ["Lamp iron.004_nk"]
+	"string type" ["metal2"]
+
+Texture "Lamp iron_nk" "fresnel" "fresnelcolor"
+	"color Kr" [0.60665363 0.60665363 0.60665363]
+
+MakeNamedMaterial "Lamp iron"
+	"float uroughness" [0.075000002980232]
+	"float vroughness" [0.075000002980232]
+	"texture fresnel" ["Lamp iron_nk"]
+	"string type" ["metal2"]
+
+MakeNamedMaterial "Lamp top fastening"
+	"color Kd" [0.73998684 0.73998684 0.73998684]
+	"float sigma" [30.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "Lamp top rough glass"
+	"bool dispersion" ["false"]
+	"float cauchyb" [0.000000000000000]
+	"float index" [1.519999980926514]
+	"color Kr" [0.69999999 0.69999999 0.69999999]
+	"color Kt" [1.00000000 1.00000000 1.00000000]
+	"float uroughness" [0.600000023841858]
+	"float vroughness" [0.600000023841858]
+	"string type" ["roughglass"]
+
+MakeNamedMaterial "lamp top filament"
+	"string type" ["null"]
+
+# Geometry File
+
+AttributeBegin #  "Middle lamp arm.001"
+
+
+NamedMaterial "Lamp chrome.002"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["floor_lamp/Plane_005_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Middle lamp arm.001"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Circle.003"
+
+
+NamedMaterial "Lamp chrome.003"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["floor_lamp/Circle_005_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Circle.003"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Lamp frame"
+
+
+NamedMaterial "Lamp chrome.001"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["floor_lamp/Cube_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Lamp frame"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Circle.001"
+
+
+NamedMaterial "Screws alu"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["floor_lamp/Circle_003_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Circle.001"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Lamp switches"
+
+
+NamedMaterial "Lamp chrome.004"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["floor_lamp/Cube_003_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Lamp switches"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Switch middle lamp"
+
+
+NamedMaterial "Lamp chrome.005"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["floor_lamp/Cube_010_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Switch middle lamp"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Switch top lamp"
+
+
+NamedMaterial "Lamp chrome.006"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["floor_lamp/Cube_002_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Switch top lamp"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Middle lamp arm"
+
+
+NamedMaterial "Lamp chrome.007"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["floor_lamp/Plane_002_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Middle lamp arm"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Lamp cone middle.001"
+
+
+AttributeBegin #  ""
+
+NamedMaterial "Lamp chrome.008"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["floor_lamp/Cube_001_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Lamp cone middle.001"]
+
+AttributeEnd # ""
+
+AttributeBegin #  ""
+
+NamedMaterial "Lamp alu reflectors.001"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["floor_lamp/Cube_001_0000_m001.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Lamp cone middle.001"]
+
+AttributeEnd # ""
+
+AttributeBegin #  ""
+
+NamedMaterial "Lamp iron.001"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["floor_lamp/Cube_001_0000_m002.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Lamp cone middle.001"]
+
+AttributeEnd # ""
+
+AttributeEnd # ""
+
+AttributeBegin #  "Lamp cone middle"
+
+
+AttributeBegin #  ""
+
+NamedMaterial "Lamp chrome.009"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["floor_lamp/Cube_006_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Lamp cone middle"]
+
+AttributeEnd # ""
+
+AttributeBegin #  ""
+
+NamedMaterial "Lamp alu reflectors.002"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["floor_lamp/Cube_006_0000_m001.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Lamp cone middle"]
+
+AttributeEnd # ""
+
+AttributeBegin #  ""
+
+NamedMaterial "Lamp iron.002"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["floor_lamp/Cube_006_0000_m002.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Lamp cone middle"]
+
+AttributeEnd # ""
+
+AttributeEnd # ""
+
+AttributeBegin #  "Middle lamp glass"
+
+
+NamedMaterial "Lamp glass.001"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["floor_lamp/Circle_007_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Middle lamp glass"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "lamp middle socket"
+
+
+AttributeBegin #  ""
+
+NamedMaterial "Lamp middle white mat"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["floor_lamp/Circle_001_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["lamp middle socket"]
+
+AttributeEnd # ""
+
+AttributeBegin #  ""
+
+NamedMaterial "Lamp middle black mat"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["floor_lamp/Circle_001_0000_m001.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["lamp middle socket"]
+
+AttributeEnd # ""
+
+AttributeEnd # ""
+
+AttributeBegin #  "lamp middle bulb"
+
+
+NamedMaterial "Lamp glass"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["floor_lamp/Circle_002_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["lamp middle bulb"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "lamp middle filament"
+
+
+NamedMaterial "Lamp middle filament"
+
+LightGroup "Lamp middle"
+
+AreaLightSource "area"
+	"bool active" ["true"]
+	"float importance" [1.000000000000000]
+	"float gain" [1.000000000000000]
+	"float power" [5.000000000000000]
+	"float efficacy" [17.000000000000000]
+	"integer nsamples" [1]
+	"color L" [0.98374581 1.00000000 0.91567260]
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["floor_lamp/Cube_007_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["lamp middle filament"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "screws middle lamp"
+
+
+NamedMaterial "Lamp iron.003"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["floor_lamp/Cube_011_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["screws middle lamp"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Lamp foot"
+
+
+AttributeBegin #  ""
+
+NamedMaterial "Lamp chrome.010"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["floor_lamp/Circle_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Lamp foot"]
+
+AttributeEnd # ""
+
+AttributeBegin #  ""
+
+NamedMaterial "Lamp foot rubber"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["floor_lamp/Circle_0000_m001.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Lamp foot"]
+
+AttributeEnd # ""
+
+AttributeEnd # ""
+
+AttributeBegin #  "cord fastening"
+
+
+NamedMaterial "plastic black"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["floor_lamp/Plane_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["cord fastening"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Lamp cone top"
+
+
+AttributeBegin #  ""
+
+NamedMaterial "Lamp chrome"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["floor_lamp/Cube_004_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Lamp cone top"]
+
+AttributeEnd # ""
+
+AttributeBegin #  ""
+
+NamedMaterial "Lamp alu reflectors"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["floor_lamp/Cube_004_0000_m001.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Lamp cone top"]
+
+AttributeEnd # ""
+
+AttributeEnd # ""
+
+AttributeBegin #  "screws.001"
+
+
+NamedMaterial "Lamp iron.004"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["floor_lamp/Cube_012_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["screws.001"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Lamp top fastening"
+
+
+NamedMaterial "Lamp iron"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["floor_lamp/Cube_008_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Lamp top fastening"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Lamp top socket"
+
+
+NamedMaterial "Lamp top fastening"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["floor_lamp/Cube_009_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Lamp top socket"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Lamp top rough glass"
+
+
+NamedMaterial "Lamp top rough glass"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["floor_lamp/Cube_005_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Lamp top rough glass"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Filament top"
+
+
+NamedMaterial "lamp top filament"
+
+LightGroup "Lamp top"
+
+AreaLightSource "area"
+	"bool active" ["true"]
+	"float importance" [1.000000000000000]
+	"float gain" [1.000000000000000]
+	"float power" [10.000000000000000]
+	"float efficacy" [17.000000000000000]
+	"integer nsamples" [1]
+	"color L" [1.00000000 0.98585784 0.94343144]
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["floor_lamp/Cylinder_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Filament top"]
+
+AttributeEnd # ""

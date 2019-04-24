@@ -1,0 +1,61 @@
+#-------------------------------------------------
+#    jade_dragon
+#-------------------------------------------------
+# Materials File
+
+MakeNamedVolume "Jade" "homogeneous"
+	"float fresnel" [1.639999985694885]
+	"color g" [0.00000000 0.00000000 0.00000000]
+	"color sigma_a" [52.59393940 35.54130235 52.59393940]
+	"color sigma_s" [156.05339408 306.65969849 156.05339408]
+
+MakeNamedVolume "world" "clear"
+	"float fresnel" [1.000000000000000]
+	"color absorption" [0.00000000 0.00000000 0.00000000]
+
+Texture "jade_clouds" "float" "blender_clouds"
+	"float bright" [1.000000000000000]
+	"float contrast" [1.000000000000000]
+	"string noisetype" ["hard_noise"]
+	"string noisebasis" ["blender_original"]
+	"float noisesize" [0.100000001490116]
+	"integer noisedepth" [6]
+	"string coordinates" ["global"]
+	"vector translate" [0.000000000000000 0.000000000000000 0.000000000000000]
+	"vector rotate" [0.000000000000000 0.000000000000000 0.000000000000000]
+	"vector scale" [0.200000002980232 0.200000002980232 0.200000002980232]
+
+Texture "jade_mix" "color" "mix"
+	"texture amount" ["jade_clouds"]
+	"color tex1" [0.11697067 0.23455061 0.11697067]
+	"color tex2" [0.38840726 0.45705861 0.34877440]
+
+MakeNamedMaterial "Jade"
+	"bool onesided" ["true"]
+	"bool multibounce" ["false"]
+	"color Kt" [1.00000000 1.00000000 1.00000000]
+	"texture Kd" ["jade_mix"]
+	"color Ks" [0.06301002 0.06301002 0.06301002]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.009999999776483]
+	"float vroughness" [0.009999999776483]
+	"string type" ["glossytranslucent"]
+
+# Geometry File
+
+AttributeBegin #  "Dragon"
+
+
+NamedMaterial "Jade"
+
+Interior  "Jade"
+
+Exterior  "world"
+
+Shape "plymesh"
+	"bool active" ["true"]
+	"string filename" ["jade_dragon/dragon_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Dragon"]
+
+AttributeEnd # ""

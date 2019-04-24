@@ -1,0 +1,84 @@
+# Main Scene File
+
+Renderer "sampler"
+
+Sampler "metropolis"
+	"float largemutationprob" [0.400000005960464]
+	"bool noiseaware" ["true"]
+
+Accelerator "qbvh"
+
+SurfaceIntegrator "bidirectional"
+	"integer eyedepth" [48]
+	"integer lightdepth" [48]
+	"string lightpathstrategy" ["auto"]
+	"string lightstrategy" ["auto"]
+
+VolumeIntegrator "single"
+	"float stepsize" [1.000000000000000]
+
+PixelFilter "gaussian"
+
+LookAt 1.210316 -0.130070 0.591035 0.428220 0.405856 0.273059 -0.262307 0.179732 0.948099
+
+Camera "perspective"
+	"float fov" [49.134342077604479]
+	"float screenwindow" [-1.000000000000000 1.000000000000000 -0.750000000000000 0.750000000000000]
+	"float shutteropen" [0.000000000000000]
+	"float shutterclose" [0.041666666666667]
+	"float lensradius" [0.001750000000000]
+	"integer blades" [8]
+	"integer power" [0]
+	"string distribution" ["uniform"]
+	"bool autofocus" ["true"]
+
+Film "fleximage"
+	"string background" ["table-A.png"]
+	"integer haltspp" [1000]
+	"integer xresolution" [1024]
+	"integer yresolution" [768]
+	"float gamma" [2.200000000000000]
+	"float colorspace_white" [0.314275000000000 0.329411000000000]
+	"float colorspace_red" [0.630000000000000 0.340000000000000]
+	"float colorspace_green" [0.310000000000000 0.595000000000000]
+	"float colorspace_blue" [0.155000000000000 0.070000000000000]
+	"string filename" ["table-glass"]
+	"bool write_resume_flm" ["true"]
+	"bool restart_resume_flm" ["true"]
+	"bool write_flm_direct" ["false"]
+	"string write_exr_channels" ["RGBA"]
+	"bool write_exr_halftype" ["false"]
+	"bool write_exr_applyimaging" ["true"]
+	"bool premultiplyalpha" ["false"]
+	"bool write_exr_ZBuf" ["true"]
+	"string write_exr_zbuf_normalizationtype" ["Camera Start/End clip"]
+	"bool write_png" ["true"]
+	"string write_png_channels" ["RGB"]
+	"bool write_png_16bit" ["false"]
+	"bool write_tga" ["false"]
+	"string write_tga_channels" ["RGB"]
+	"string ldr_clamp_method" ["cut"]
+	"integer writeinterval" [10]
+	"integer outlierrejection_k" [5]
+	"integer tilecount" [0]
+	"string tonemapkernel" ["reinhard"]
+	"float reinhard_prescale" [1.000000000000000]
+	"float reinhard_postscale" [1.200000047683716]
+	"float reinhard_burn" [6.000000000000000]
+
+WorldBegin
+
+Include "table/Scene/00000/LuxRender-Materials.lxm"
+
+Include "table/Scene/00000/LuxRender-Geometry.lxo"
+
+Include "table/Scene/00000/LuxRender-Volumes.lxv"
+
+Exterior  "room"
+
+TransformBegin
+Transform [0.124926 -0.009921 -0.001339 0.000000 -0.001011 0.004173 -0.125253 0.000000 0.009960 0.124864 0.004080 0.000000 0.203591 0.843090 -0.000426 1.000000]
+Include "glass/glass.lxo"
+TransformEnd
+
+WorldEnd

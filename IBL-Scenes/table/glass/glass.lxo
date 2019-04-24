@@ -1,0 +1,52 @@
+# Materials File
+
+MakeNamedVolume "air" "clear"
+	"float fresnel" [1.000292658805847]
+	"color absorption" [0.00000000 0.00000000 0.00000000]
+
+MakeNamedVolume "glass" "homogeneous"
+	"float fresnel" [1.399999976158142]
+	"color g" [0.00000000 0.00000000 0.00000000]
+	"color sigma_a" [0.00000000 0.00000000 0.00000000]
+	"color sigma_s" [0.00000000 0.00000000 0.00000000]
+
+Texture "Material.001_bump+normal_generated" "float" "multimix"
+	"texture tex1" [""]
+	"texture tex2" [""]
+	"float weights" [0.000000000000000 1.000000000000000]
+
+MakeNamedMaterial "Material.001"
+	"texture bumpmap" ["Material.001_bump+normal_generated"]
+	"color Kd" [0.38801369 0.52114332 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+Texture "glass_bump+normal_generated" "float" "multimix"
+	"texture tex1" [""]
+	"texture tex2" [""]
+	"float weights" [0.000000000000000 1.000000000000000]
+
+MakeNamedMaterial "glass"
+	"texture bumpmap" ["glass_bump+normal_generated"]
+	"bool architectural" ["false"]
+	"bool dispersion" ["false"]
+	"string type" ["glass2"]
+
+
+# Geometry File
+
+AttributeBegin #  "Mesh.003"
+
+NamedMaterial "glass"
+
+Interior  "glass"
+
+Exterior  "air"
+
+Shape "plymesh"
+	"string filename" ["glass/glass.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Mesh.003"]
+	"bool active" ["true"]
+
+AttributeEnd # ""

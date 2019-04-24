@@ -1,0 +1,106 @@
+# Materials File
+
+MakeNamedVolume "air" "clear"
+	"float fresnel" [1.000292658805847]
+	"color absorption" [0.00000000 0.00000000 0.00000000]
+
+MakeNamedVolume "glass" "homogeneous"
+	"float fresnel" [1.466500163078308]
+	"color g" [0.00000000 0.00000000 0.00000000]
+	"color sigma_a" [0.00000000 0.00000000 0.00000000]
+	"color sigma_s" [0.00000000 0.00000000 0.00000000]
+
+Texture "chrome_bump+normal_generated" "float" "multimix"
+	"texture tex1" [""]
+	"texture tex2" [""]
+	"float weights" [0.000000000000000 1.000000000000000]
+
+MakeNamedMaterial "chrome"
+	"texture bumpmap" ["chrome_bump+normal_generated"]
+	"float film" [0.000000000000000]
+	"float filmindex" [1.333299994468689]
+	"color Kr" [0.69999999 0.69999999 0.69999999]
+	"color Ks" [0.04000000 0.04000000 0.04000000]
+	"float uroughness" [0.039800457656384]
+	"float vroughness" [0.039800457656384]
+	"string type" ["shinymetal"]
+
+Texture "black leather wrink" "float" "wrinkled"
+	"integer octaves" [8]
+	"float roughness" [0.500000000000000]
+	"string coordinates" ["global"]
+	"vector translate" [0.000000000000000 0.000000000000000 0.000000000000000]
+	"vector rotate" [0.000000000000000 0.000000000000000 0.000000000000000]
+	"vector scale" [0.029999999329448 0.029999999329448 0.029999999329448]
+
+Texture "black leather crack" "float" "blender_clouds"
+	"float bright" [1.000000000000000]
+	"float contrast" [1.000000000000000]
+	"string noisetype" ["soft_noise"]
+	"string noisebasis" ["voronoi_crackle"]
+	"float noisesize" [0.100000001490116]
+	"integer noisedepth" [2]
+	"string coordinates" ["global"]
+	"vector translate" [0.000000000000000 0.000000000000000 0.000000000000000]
+	"vector rotate" [0.000000000000000 0.000000000000000 0.000000000000000]
+	"vector scale" [0.050000000745058 0.050000000745058 0.050000000745058]
+
+Texture "black leather bump" "float" "multimix"
+	"texture tex1" ["black leather wrink"]
+	"texture tex2" ["black leather crack"]
+	"float weights" [0.001000000047497 0.000000000000000]
+
+Texture "Black Leather_bump+normal_generated" "float" "multimix"
+	"texture tex1" ["black leather bump"]
+	"texture tex2" [""]
+	"float weights" [0.000000000000000 1.000000000000000]
+
+MakeNamedMaterial "Black Leather"
+	"texture bumpmap" ["Black Leather_bump+normal_generated"]
+	"bool multibounce" ["false"]
+	"float d" [0.119999997317791]
+	"color Ka" [0.03300000 0.03300000 0.03300000]
+	"color Kd" [0.01000000 0.01000000 0.01000000]
+	"color Ks" [0.03000000 0.03000000 0.03000000]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.090000003576279]
+	"float vroughness" [0.090000003576279]
+	"string type" ["glossy"]
+
+Texture "Material.001_bump+normal_generated" "float" "multimix"
+	"texture tex1" [""]
+	"texture tex2" [""]
+	"float weights" [0.000000000000000 1.000000000000000]
+
+MakeNamedMaterial "Material.001"
+	"texture bumpmap" ["Material.001_bump+normal_generated"]
+	"color Kd" [0.38801369 0.52114332 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+
+# Geometry File
+
+AttributeBegin #  "pendulum"
+
+NamedMaterial "chrome"
+
+Shape "plymesh"
+	"string filename" ["pendulum/pendulum.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["pendulum"]
+	"bool active" ["true"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "base"
+
+NamedMaterial "Black Leather"
+
+Shape "plymesh"
+	"string filename" ["pendulum/base.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["base"]
+	"bool active" ["true"]
+
+AttributeEnd # ""

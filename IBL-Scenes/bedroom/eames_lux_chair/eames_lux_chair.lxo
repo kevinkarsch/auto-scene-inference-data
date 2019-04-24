@@ -1,0 +1,186 @@
+# Materials File
+
+MakeNamedMaterial "mat1"
+	"bool multibounce" ["false"]
+	"color Kd" [0.06000000 0.06000000 0.06000000]
+	"color Ks" [0.08500000 0.08500000 0.08500000]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.165000006556511]
+	"float vroughness" [0.165000006556511]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "mat4"
+	"float uroughness" [0.015000002458692]
+	"float vroughness" [0.015000002458692]
+	"string name" ["aluminium"]
+	"string type" ["metal"]
+
+Texture "Texture.003_float" "float" "imagemap"
+	"string filename" ["eames_lux_chair/luxblend_extracted_image_Texture_003.PNG"]
+	"integer discardmipmaps" [0]
+	"float gain" [1.000000000000000]
+	"float gamma" [2.200000047683716]
+	"float maxanisotropy" [8.000000000000000]
+	"string wrap" ["repeat"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+Texture "Texture.003_float_scaled_1" "float" "scale"
+	"float tex1" [0.001000000047497]
+	"texture tex2" ["Texture.003_float"]
+
+MakeNamedMaterial "mat3"
+	"texture bumpmap" ["Texture.003_float_scaled_1"]
+	"bool multibounce" ["false"]
+	"color Kd" [0.01599361 0.01599361 0.01599361]
+	"color Ks" [0.13000000 0.13000000 0.13000000]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.140000000596046]
+	"float vroughness" [0.140000000596046]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+Texture "Diffuse_color" "color" "imagemap"
+	"string filename" ["eames_lux_chair/luxblend_extracted_image_Diffuse.PNG"]
+	"integer discardmipmaps" [0]
+	"float gain" [1.000000000000000]
+	"float gamma" [2.200000047683716]
+	"float maxanisotropy" [8.000000000000000]
+	"string wrap" ["repeat"]
+	"string mapping" ["uv"]
+	"float uscale" [1.000000000000000]
+	"float vscale" [-1.000000000000000]
+	"float udelta" [0.000000000000000]
+	"float vdelta" [1.000000000000000]
+
+Texture "Diffuse_color_scaled_2" "color" "scale"
+	"color tex1" [0.23954527 0.23954527 0.23954527]
+	"texture tex2" ["Diffuse_color"]
+
+MakeNamedMaterial "mat2"
+	"bool multibounce" ["false"]
+	"texture Kd" ["Diffuse_color_scaled_2"]
+	"color Ks" [0.09000000 0.09000000 0.09000000]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.045000001788139]
+	"float vroughness" [0.045000001788139]
+	"float sigma" [0.000000000000000]
+	"string type" ["glossy"]
+
+
+# Geometry File
+
+AttributeBegin #  "HBase"
+
+AttributeBegin #  ""
+
+NamedMaterial "mat1"
+
+Shape "plymesh"
+	"string filename" ["eames_lux_chair/HBase_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["HBase"]
+	"bool active" ["true"]
+
+AttributeEnd # ""
+
+AttributeBegin #  ""
+
+NamedMaterial "mat4"
+
+Shape "plymesh"
+	"string filename" ["eames_lux_chair/HBase_0000_m001.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["HBase"]
+
+AttributeEnd # ""
+
+AttributeEnd # ""
+
+AttributeBegin #  "HBase0"
+
+NamedMaterial "mat1"
+
+Shape "plymesh"
+	"string filename" ["eames_lux_chair/HBase0_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["HBase0"]
+	"bool active" ["true"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "HBkSppt"
+
+NamedMaterial "mat4"
+
+Shape "plymesh"
+	"string filename" ["eames_lux_chair/HBkSppt_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["HBkSppt"]
+	"bool active" ["true"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "HCushion"
+
+NamedMaterial "mat3"
+
+Shape "plymesh"
+	"string filename" ["eames_lux_chair/HCushion_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["HCushion"]
+	"bool active" ["true"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "HCushion0"
+
+NamedMaterial "mat3"
+
+Shape "plymesh"
+	"string filename" ["eames_lux_chair/HCushion0_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["HCushion0"]
+	"bool active" ["true"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "HGlides0"
+
+NamedMaterial "mat4"
+
+Shape "plymesh"
+	"string filename" ["eames_lux_chair/HGlides0_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["HGlides0"]
+	"bool active" ["true"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "HShell"
+
+NamedMaterial "mat2"
+
+Shape "plymesh"
+	"string filename" ["eames_lux_chair/HShell_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["HShell"]
+	"bool active" ["true"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "HShell0"
+
+NamedMaterial "mat2"
+
+Shape "plymesh"
+	"string filename" ["eames_lux_chair/HShell0_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["HShell0"]
+	"bool active" ["true"]
+
+AttributeEnd # ""

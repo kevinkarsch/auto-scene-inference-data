@@ -1,0 +1,136 @@
+# Materials File
+
+MakeNamedVolume "air" "clear"
+	"float fresnel" [1.000292658805847]
+	"color absorption" [0.00000000 0.00000000 0.00000000]
+
+MakeNamedVolume "glass" "homogeneous"
+	"float fresnel" [1.519999980926514]
+	"color g" [0.00000000 0.00000000 0.00000000]
+	"color sigma_a" [0.00000000 0.00000000 0.00000000]
+	"color sigma_s" [0.00000000 0.00000000 0.00000000]
+
+MakeNamedVolume "glassgreen" "clear"
+	"float fresnel" [1.519999980926514]
+	"color absorption" [1.89986811 0.00000000 1.17722646]
+
+Texture "Material.002_bump+normal_generated" "float" "multimix"
+	"texture tex1" [""]
+	"texture tex2" [""]
+	"float weights" [0.000000000000000 1.000000000000000]
+
+Texture "tvpictex_color" "color" "imagemap"
+	"string filename" ["tv/tvpic.jpg"]
+	"float gamma" [2.200000000000000]
+	"string mapping" ["uv"]
+	"float udelta" [0.000000000000000]
+	"float uscale" [1.000000000000000]
+	"float vscale" [1.000000000000000]
+	"float vdelta" [0.000000000000000]
+
+MakeNamedMaterial "Material.002"
+	"texture bumpmap" ["Material.002_bump+normal_generated"]
+	"texture Kd" ["tvpictex_color"]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+Texture "panel board_bump+normal_generated" "float" "multimix"
+	"texture tex1" [""]
+	"texture tex2" [""]
+	"float weights" [0.000000000000000 1.000000000000000]
+
+MakeNamedMaterial "panel board"
+	"texture bumpmap" ["panel board_bump+normal_generated"]
+	"bool multibounce" ["false"]
+	"color Kd" [0.01612446 0.01612446 0.01612446]
+	"color Ks" [0.05221541 0.05221541 0.05221541]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.075000002980232]
+	"float vroughness" [0.075000002980232]
+	"string type" ["glossy"]
+
+Texture "Material_bump+normal_generated" "float" "multimix"
+	"texture tex1" [""]
+	"texture tex2" [""]
+	"float weights" [0.000000000000000 1.000000000000000]
+
+MakeNamedMaterial "Material"
+	"texture bumpmap" ["Material_bump+normal_generated"]
+	"bool multibounce" ["false"]
+	"color Kd" [0.01599360 0.01599360 0.01599360]
+	"color Ks" [0.04000000 0.04000000 0.04000000]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.222198143601418]
+	"float vroughness" [0.222198143601418]
+	"string type" ["glossy"]
+
+Texture "Material.001_bump+normal_generated" "float" "multimix"
+	"texture tex1" [""]
+	"texture tex2" [""]
+	"float weights" [0.000000000000000 1.000000000000000]
+
+MakeNamedMaterial "Material.001"
+	"texture bumpmap" ["Material.001_bump+normal_generated"]
+	"color Kd" [0.38801369 0.52114332 0.63999999]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+
+# Geometry File
+
+AttributeBegin #  "Layer 1.002"
+
+NamedMaterial "Material.002"
+
+LightGroup "tvlight"
+
+AreaLightSource "area"
+	"float importance" [1.000000000000000]
+	"float gain" [1.000000000000000]
+	"float power" [100.000000000000000]
+	"float efficacy" [17.000000000000000]
+	"texture L" ["tvpictex_color"]
+
+Shape "plymesh"
+	"string filename" ["tv/Layer_1_002_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Layer 1.002"]
+	"bool active" ["true"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Layer 1.001"
+
+NamedMaterial "panel board"
+
+Shape "plymesh"
+	"string filename" ["tv/Layer_1_001_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Layer 1.001"]
+	"bool active" ["true"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Layer 3"
+
+NamedMaterial "panel board"
+
+Shape "plymesh"
+	"string filename" ["tv/Layer_3_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Layer 3"]
+	"bool active" ["true"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "Layer 2"
+
+NamedMaterial "Material"
+
+Shape "plymesh"
+	"string filename" ["tv/Layer_2_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Layer 2"]
+	"bool active" ["true"]
+
+AttributeEnd # ""
